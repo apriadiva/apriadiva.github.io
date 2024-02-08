@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #343a40;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #bfc0c3;
+}
+
+#projects {
+  background-color: #bfc0c3;
+}
+
+#footer {
+  background-color: #343a40;
+}
+
+/* CSS untuk efek mengambang */
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding-top: 5rem;
+}
