@@ -61,6 +61,12 @@
     <!-- Akhir Jumbotron -->
 
     <!-- About -->
+    <style>
+      .justify-text {
+        text-align: justify;
+      }
+    </style>
+
     <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
@@ -69,13 +75,22 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero odit ad animi laborum molestiae voluptatem hic excepturi reiciendis consequuntur architecto!</p>
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+            <p>I am a math student with strong skills in analysis, problem solving, and logic. My interests are focused on the worlds of mathematics and technology, and I am committed to dedicating myself to the close relationship between the two.</p>
           </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugit? Eum reprehenderit iste ea aut maiores. Dolore asperiores, eum adipisci atque voluptate reiciendis magnam! Dolor.</p>
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
+            <p>My experience involves using programming languages ​​such as Pascal, C++, and Python, as well as implementing PostgreSQL for data analysis. Currently, my interests have expanded into the field of machine learning, and I am excited to continue learning and growing.</p>
           </div>
+          <!-- <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <p class="justify-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugit? Eum reprehenderit iste ea aut maiores. Dolore asperiores, eum adipisci atque voluptate reiciendis magnam! Dolor.</p>
+          </div> -->
         </div>
+        <!-- <div class="row fs-5 md-8">
+          <h4>Experiences:</h4>
+          <ul>
+            <li>Diskas | Data Analyst & Product Researcher (April - September 2023)</li>
+          </ul>
+        </div> -->
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -131,7 +146,7 @@
           <div class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
             <img src="img/projects/4.jpg.jpg" class="card-img-top" alt="Project 4" />
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Pakistan's Largest E-Commerce Dataset Analysis</p>
             </div>
           </div>
         </div>
@@ -168,12 +183,12 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terima Kasih!</strong> Pesan Anda sudah kami terima.
+              <strong>Thank You!</strong> We have received your message.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="submit-to-google-sheet">
               <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
+                <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
               </div>
               <div class="mb-3">
@@ -181,12 +196,12 @@
                 <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
+                <label for="pesan" class="form-label">Message</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
 
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <button class="btn btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                 <span role="status">Loading...</span>
               </button>
