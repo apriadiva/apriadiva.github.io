@@ -1,372 +1,1406 @@
 <!doctype html>
-<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260831-01-4b600cf","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
-  <style>
-    :root{--navy:#091a33;--slate:#40536a;--paper:#f7f9fc;--electric:#177ef6;--electric-light:#b9dbff;--line:rgba(120,151,188,.26)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;width:100%;font-family:"DM Sans",sans-serif;color:var(--navy);background:var(--paper);overflow-x:hidden}
-    .site-shell{width:100%;overflow:hidden;padding-top:72px}.portfolio-width{width:min(1160px,calc(100% - 48px));margin:0 auto}section{scroll-margin-top:90px}.display-face{font-family:"Fraunces",serif}
-    button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--electric-light);outline-offset:3px}
-    .site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:50;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(247,249,252,.86);border-bottom:1px solid rgba(111,147,184,.18)}
-    .header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand-mark{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:700}.brand-dot{width:11px;height:11px;border-radius:50%;background:var(--electric);box-shadow:0 0 0 6px rgba(23,126,246,.12)}
-    .desktop-menu{display:flex;align-items:center;gap:6px}.desktop-menu a,.mobile-menu a{color:var(--slate);text-decoration:none;font-size:.9rem;font-weight:600;padding:9px 12px;border-radius:999px;transition:color .2s,background .2s}.desktop-menu a:hover,.mobile-menu a:hover{color:var(--electric);background:rgba(23,126,246,.08)}
-    .menu-button{display:none;border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:10px;min-width:44px;min-height:44px;cursor:pointer;align-items:center;justify-content:center}.mobile-menu{display:none;padding:8px 24px 18px;flex-direction:column;background:rgba(247,249,252,.97);border-top:1px solid var(--line)}.mobile-menu.is-open{display:flex}
-    .hero-section{position:relative;padding:86px 0 100px;background:linear-gradient(135deg,#1769aa 0%,#718096 52%,#fff 100%);color:#fff;isolation:isolate}.hero-section:after{content:"";position:absolute;inset:0;z-index:-1;opacity:.2;background-image:linear-gradient(rgba(185,219,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(185,219,255,.18) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:60px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#b9dbff;font-size:.76rem;letter-spacing:.16em;font-weight:700;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.hero-name{margin:17px 0 12px;color:#d9eaff;font-size:1.05rem;font-weight:700;letter-spacing:.04em}.hero-heading{max-width:730px;margin:0;color:#fff;font-size:clamp(2.7rem,5.5vw,5.5rem);letter-spacing:-.055em;line-height:.99}.hero-copy{max-width:600px;margin:24px 0 0;color:#c7d7e8;font-size:1.08rem;line-height:1.75}
-    .button-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:32px}.action-button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;border-radius:10px;padding:12px 19px;cursor:pointer;text-decoration:none;font-weight:700;font-size:.92rem;transition:transform .2s,box-shadow .2s,background .2s}.action-button:hover{transform:translateY(-2px)}.primary-action{border:1px solid #177ef6;background:#177ef6;color:#fff;box-shadow:0 12px 28px rgba(0,89,203,.28)}.primary-action:hover{background:#0869d6}.secondary-action{border:1px solid rgba(185,219,255,.4);background:rgba(255,255,255,.05);color:#fff}.secondary-action:hover{background:rgba(255,255,255,.12)}
-    .abstract-visual{position:relative;min-height:500px}.profile-photo-frame{position:absolute;z-index:4;right:24px;top:10px;width:340px;height:430px;overflow:hidden;border:2px solid #4f91d8;border-radius:18px;background:linear-gradient(135deg,#177ef6 0%,#718096 100%);box-shadow:0 10px 26px rgba(30,120,220,.18)}.profile-photo{position:relative;z-index:5;width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block;visibility:visible;opacity:1;filter:saturate(.96) contrast(.98)}.profile-photo-hint{position:absolute;left:0;right:0;bottom:0;padding:7px 5px;background:rgba(7,23,47,.62);color:#fff;text-align:center;font-size:.68rem;font-weight:600}
-    .orb{position:absolute;border-radius:50%;filter:blur(.1px)}.orb-one{width:280px;height:280px;right:16px;top:20px;background:radial-gradient(circle at 30% 28%,#d9ebff,#348ded 40%,#0a315b 74%);box-shadow:0 0 42px rgba(46,138,255,.28)}.orb-two{width:145px;height:145px;left:16px;bottom:18px;background:linear-gradient(135deg,#dceaff,#5f7f9f 65%,#1c3554)}.glass-card{position:absolute;border:1px solid rgba(219,235,255,.42);background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.05));backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);box-shadow:0 14px 32px rgba(0,0,0,.16);border-radius:19px}.glass-main{width:270px;height:170px;left:26px;top:92px;padding:20px;transform:rotate(-7deg)}.glass-small{width:190px;height:116px;right:0;bottom:35px;transform:rotate(8deg)}.glass-line{height:8px;margin-bottom:12px;border-radius:99px;background:rgba(232,244,255,.72)}.glass-line.short{width:55%}.glass-line.blue{width:73%;background:#65b0ff}.glass-chip{position:absolute;left:20px;bottom:18px;width:52px;height:14px;border-radius:99px;background:#177ef6}
-    .section-block{padding:100px 0}.section-top{max-width:690px;margin-bottom:44px}.section-kicker{margin:0 0 11px;color:var(--electric);font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.section-heading{margin:0;color:var(--navy);font-size:clamp(2.15rem,4vw,3.6rem);line-height:1.06;letter-spacing:-.045em}.about-heading{width:473px;max-width:100%}.section-intro{margin:18px 0 0;color:var(--slate);line-height:1.75}
-    .about-section{background:linear-gradient(180deg,#f7f9fc,#eaf1f8)}.about-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:60px}.profile-panel{padding:30px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 35px rgba(21,53,88,.06)}.profile-rule{width:42px;height:4px;border-radius:8px;background:var(--electric);margin-bottom:20px}.profile-copy{margin:0;color:var(--slate);line-height:1.8;text-align:justify}.skills-label{margin:27px 0 13px;color:var(--navy);font-size:.83rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.skills{display:flex;flex-wrap:wrap;gap:8px}.skill-tag{padding:8px 11px;border-radius:7px;background:#dceafd;color:#17436f;font-size:.84rem;font-weight:700}.timeline{position:relative;padding-left:26px;border-left:1px solid #afc5dc}.timeline-item{position:relative;padding:0 0 29px 20px}.timeline-item:last-child{padding-bottom:0}.timeline-item:before{content:"";position:absolute;left:-33px;top:4px;width:12px;height:12px;border-radius:50%;border:3px solid #eaf1f8;background:var(--electric)}.timeline-year{margin:0 0 5px;color:var(--electric);font-size:.8rem;font-weight:700;letter-spacing:.1em}.timeline-title{margin:0;color:var(--navy);font-size:1.05rem;font-weight:700}.timeline-copy{margin:6px 0 0;color:var(--slate);line-height:1.65;font-size:.94rem}
-    .projects-section{background:#f7f9fc}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.project-card,.cert-card{overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line);background:#fff;border-radius:18px;box-shadow:0 10px 25px rgba(27,55,84,.05);transition:transform .25s,box-shadow .25s}.project-card:hover,.cert-card:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(27,55,84,.11)}.project-image{width:100%;height:190px;object-fit:cover;background:#cbd9e8}.card-content{display:flex;flex:1;flex-direction:column;padding:22px}.card-title{margin:0;color:var(--navy);font-size:1.24rem;font-weight:700}.card-copy{margin:10px 0 17px;color:var(--slate);line-height:1.65;font-size:.94rem}.stack-label{margin:auto 0 8px;color:#66809a;font-size:.7rem;letter-spacing:.12em;font-weight:700;text-transform:uppercase}.tech-stack{margin:0 0 18px;color:#174e82;font-size:.85rem;font-weight:700}.small-action{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:10px 13px;width:fit-content;border:1px solid #a9c7e5;border-radius:8px;background:#fff;color:#15558f;cursor:pointer;font-size:.86rem;font-weight:700;transition:background .2s,color .2s}.small-action:hover{background:#177ef6;color:#fff;border-color:#177ef6}.inline-status{min-height:24px;margin:26px 0 0;color:#15558f;font-size:.9rem;font-weight:600}
-    .certifications-section{background:linear-gradient(135deg,#102b4d,#0a1c36)}.certifications-section .section-heading{color:#fff}.certifications-section .section-intro{color:#bdd0e2}.certifications-section .section-kicker{color:#7ebaff}.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cert-card{padding:24px;background:rgba(255,255,255,.95)}.cert-icon{display:inline-flex;align-items:center;justify-content:center;width:45px;height:45px;margin-bottom:20px;border-radius:12px;color:#fff;background:linear-gradient(135deg,#177ef6,#0c4d9a)}.cert-name{margin:0;color:var(--navy);font-size:1.04rem;line-height:1.35;font-weight:700}.cert-issuer{margin:10px 0 3px;color:var(--slate);font-size:.9rem}.cert-year{margin:0 0 19px;color:#3975aa;font-size:.85rem;font-weight:700}
-    .contact-section{background:#eaf1f8}.contact-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:56px;align-items:start}.contact-details{padding-top:6px}.contact-blurb{margin:18px 0 26px;color:var(--slate);line-height:1.75}.contact-link{display:flex;align-items:center;gap:10px;width:fit-content;color:var(--navy);font-weight:700;text-decoration:none;margin:12px 0}.contact-link:hover{color:var(--electric)}.contact-form-wrap{padding:30px;background:#fff;border:1px solid var(--line);border-radius:18px}.form-row{margin-bottom:18px}.form-label{display:block;margin-bottom:8px;color:var(--navy);font-size:.88rem;font-weight:700}.form-input{width:100%;min-height:48px;padding:12px 13px;border:1px solid #b4c8dc;border-radius:8px;color:var(--navy);background:#fbfdff;font:inherit;transition:border-color .2s,box-shadow .2s}textarea.form-input{min-height:132px;resize:vertical}.form-input:focus{border-color:var(--electric);box-shadow:0 0 0 3px rgba(23,126,246,.13);outline:none}.form-error{min-height:22px;margin:0 0 14px;color:#b42318;font-size:.88rem;font-weight:600}.submit-button{width:100%;border:0}.submit-button:disabled{opacity:.62;cursor:wait;transform:none}.success-state{text-align:center;padding:24px 0 8px}.success-icon{display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;margin-bottom:17px;border-radius:50%;color:#fff;background:#177ef6}.success-title{margin:0;color:var(--navy);font-size:1.45rem;font-weight:700}.success-copy{margin:10px 0 0;color:var(--slate);line-height:1.65}
-    .site-footer{padding:28px 0;background:#07172f;text-align:center}.footer-copy{margin:0;color:#b9ccde;font-size:.86rem}.reveal{opacity:0;transform:translateY(15px);transition:opacity 450ms cubic-bezier(.22,1,.36,1),transform 450ms cubic-bezier(.22,1,.36,1)}.reveal.is-visible{opacity:1;transform:translateY(0)}
-    @media(max-width:900px){.hero-grid,.about-layout,.contact-layout{grid-template-columns:1fr;gap:42px}.abstract-visual{max-width:470px;width:100%;margin:0 auto}.about-heading{width:100%}.card-grid{grid-template-columns:repeat(2,1fr)}.cert-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:680px){.portfolio-width{width:min(100% - 32px,1160px)}.desktop-menu{display:none}.menu-button{display:inline-flex}.hero-section{padding:66px 0 80px}.section-block{padding:74px 0}.card-grid,.cert-grid{grid-template-columns:1fr}.abstract-visual{min-height:330px;transform:scale(.9);transform-origin:top center;margin-bottom:-28px}.profile-photo-frame{right:8px;top:6px;width:290px;height:350px}.profile-photo{object-position:center 16%}.glass-main{left:4px}.orb-one{right:5px}.site-header{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(247,249,252,.97)}.glass-card{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.16);box-shadow:0 10px 22px rgba(0,0,0,.13)}.reveal{transform:translateY(11px);transition-duration:375ms}.project-card,.cert-card,.profile-panel{box-shadow:0 6px 16px rgba(27,55,84,.05)}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}[data-parallax]{transform:none!important;will-change:auto}}
-    [data-parallax]{will-change:transform;backface-visibility:hidden}
-    @media(max-width:680px){[data-parallax]{will-change:auto}}
-  </style>
-  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
- </head>
- <body data-template-id="__page-root">
-  <div class="site-shell">
-   <header class="site-header canva-header" data-template-id="site-header" style="background: rgb(247, 249, 252);">
-    <div class="portfolio-width header-inner"><a href="#home" class="brand-mark" aria-label="Back to home"><span class="brand-dot" aria-hidden="true"></span><span data-template-id="brand-name" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">APRIA DIVA PUTRI</span></a>
-     <nav class="desktop-menu canva-menu" aria-label="Primary navigation"><a data-template-id="nav-home" class="canva-link" href="#home" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Home</a><a data-template-id="nav-about" class="canva-link" href="#about" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">About Me</a><a data-template-id="nav-projects" class="canva-link" href="#projects" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Projects</a><a data-template-id="nav-certifications" class="canva-link" href="#certifications" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Certifications</a><a data-template-id="nav-contact" class="canva-link" href="#contact" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Contact</a>
-     </nav><button id="menu-toggle" class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"><i data-lucide="menu" aria-hidden="true"></i></button>
+<html lang="en">
+  <head>
+    <script>
+      window["__codeletBootstrap__"] = JSON.parse(
+        '{"A":"A","B":"20260831-01-4b600cf","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}',
+      );
+    </script>
+    <script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --navy: #091a33;
+        --slate: #40536a;
+        --paper: #f7f9fc;
+        --electric: #177ef6;
+        --electric-light: #b9dbff;
+        --line: rgba(120, 151, 188, 0.26);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+      body {
+        margin: 0;
+        width: 100%;
+        font-family: "DM Sans", sans-serif;
+        color: var(--navy);
+        background: var(--paper);
+        overflow-x: hidden;
+      }
+      .site-shell {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 72px;
+      }
+      .portfolio-width {
+        width: min(1160px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+      section {
+        scroll-margin-top: 90px;
+      }
+      .display-face {
+        font-family: "Fraunces", serif;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--electric-light);
+        outline-offset: 3px;
+      }
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 50;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(247, 249, 252, 0.86);
+        border-bottom: 1px solid rgba(111, 147, 184, 0.18);
+      }
+      .header-inner {
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .brand-mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--navy);
+        font-weight: 700;
+      }
+      .brand-dot {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: var(--electric);
+        box-shadow: 0 0 0 6px rgba(23, 126, 246, 0.12);
+      }
+      .desktop-menu {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .desktop-menu a,
+      .mobile-menu a {
+        color: var(--slate);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 9px 12px;
+        border-radius: 999px;
+        transition:
+          color 0.2s,
+          background 0.2s;
+      }
+      .desktop-menu a:hover,
+      .mobile-menu a:hover {
+        color: var(--electric);
+        background: rgba(23, 126, 246, 0.08);
+      }
+      .menu-button {
+        display: none;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--navy);
+        border-radius: 10px;
+        min-width: 44px;
+        min-height: 44px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+      .mobile-menu {
+        display: none;
+        padding: 8px 24px 18px;
+        flex-direction: column;
+        background: rgba(247, 249, 252, 0.97);
+        border-top: 1px solid var(--line);
+      }
+      .mobile-menu.is-open {
+        display: flex;
+      }
+      .hero-section {
+        position: relative;
+        padding: 86px 0 100px;
+        background: linear-gradient(135deg, #1769aa 0%, #718096 52%, #fff 100%);
+        color: #fff;
+        isolation: isolate;
+      }
+      .hero-section:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.2;
+        background-image: linear-gradient(rgba(185, 219, 255, 0.18) 1px, transparent 1px), linear-gradient(90deg, rgba(185, 219, 255, 0.18) 1px, transparent 1px);
+        background-size: 44px 44px;
+        mask-image: linear-gradient(to bottom, #000, transparent 80%);
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: center;
+        gap: 60px;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: #b9dbff;
+        font-size: 0.76rem;
+        letter-spacing: 0.16em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .eyebrow:before {
+        content: "";
+        width: 28px;
+        height: 1px;
+        background: currentColor;
+      }
+      .hero-name {
+        margin: 17px 0 12px;
+        color: #d9eaff;
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      .hero-heading {
+        max-width: 730px;
+        margin: 0;
+        color: #fff;
+        font-size: clamp(2.7rem, 5.5vw, 5.5rem);
+        letter-spacing: -0.055em;
+        line-height: 0.99;
+      }
+      .hero-copy {
+        max-width: 600px;
+        margin: 24px 0 0;
+        color: #c7d7e8;
+        font-size: 1.08rem;
+        line-height: 1.75;
+      }
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+        margin-top: 32px;
+      }
+      .action-button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 12px 19px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.92rem;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s,
+          background 0.2s;
+      }
+      .action-button:hover {
+        transform: translateY(-2px);
+      }
+      .primary-action {
+        border: 1px solid #177ef6;
+        background: #177ef6;
+        color: #fff;
+        box-shadow: 0 12px 28px rgba(0, 89, 203, 0.28);
+      }
+      .primary-action:hover {
+        background: #0869d6;
+      }
+      .secondary-action {
+        border: 1px solid rgba(185, 219, 255, 0.4);
+        background: rgba(255, 255, 255, 0.05);
+        color: #fff;
+      }
+      .secondary-action:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+      .abstract-visual {
+        position: relative;
+        min-height: 500px;
+      }
+      .profile-photo-frame {
+        position: absolute;
+        z-index: 4;
+        right: 24px;
+        top: 10px;
+        width: 340px;
+        height: 430px;
+        overflow: hidden;
+        border: 2px solid #4f91d8;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #177ef6 0%, #718096 100%);
+        box-shadow: 0 10px 26px rgba(30, 120, 220, 0.18);
+      }
+      .profile-photo {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 18%;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        filter: saturate(0.96) contrast(0.98);
+      }
+      .profile-photo-hint {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 7px 5px;
+        background: rgba(7, 23, 47, 0.62);
+        color: #fff;
+        text-align: center;
+        font-size: 0.68rem;
+        font-weight: 600;
+      }
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(0.1px);
+      }
+      .orb-one {
+        width: 280px;
+        height: 280px;
+        right: 16px;
+        top: 20px;
+        background: radial-gradient(circle at 30% 28%, #d9ebff, #348ded 40%, #0a315b 74%);
+        box-shadow: 0 0 42px rgba(46, 138, 255, 0.28);
+      }
+      .orb-two {
+        width: 145px;
+        height: 145px;
+        left: 16px;
+        bottom: 18px;
+        background: linear-gradient(135deg, #dceaff, #5f7f9f 65%, #1c3554);
+      }
+      .glass-card {
+        position: absolute;
+        border: 1px solid rgba(219, 235, 255, 0.42);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+        border-radius: 19px;
+      }
+      .glass-main {
+        width: 270px;
+        height: 170px;
+        left: 26px;
+        top: 92px;
+        padding: 20px;
+        transform: rotate(-7deg);
+      }
+      .glass-small {
+        width: 190px;
+        height: 116px;
+        right: 0;
+        bottom: 35px;
+        transform: rotate(8deg);
+      }
+      .glass-line {
+        height: 8px;
+        margin-bottom: 12px;
+        border-radius: 99px;
+        background: rgba(232, 244, 255, 0.72);
+      }
+      .glass-line.short {
+        width: 55%;
+      }
+      .glass-line.blue {
+        width: 73%;
+        background: #65b0ff;
+      }
+      .glass-chip {
+        position: absolute;
+        left: 20px;
+        bottom: 18px;
+        width: 52px;
+        height: 14px;
+        border-radius: 99px;
+        background: #177ef6;
+      }
+      .section-block {
+        padding: 100px 0;
+      }
+      .section-top {
+        max-width: 690px;
+        margin-bottom: 44px;
+      }
+      .section-kicker {
+        margin: 0 0 11px;
+        color: var(--electric);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .section-heading {
+        margin: 0;
+        color: var(--navy);
+        font-size: clamp(2.15rem, 4vw, 3.6rem);
+        line-height: 1.06;
+        letter-spacing: -0.045em;
+      }
+      .about-heading {
+        width: 473px;
+        max-width: 100%;
+      }
+      .section-intro {
+        margin: 18px 0 0;
+        color: var(--slate);
+        line-height: 1.75;
+      }
+      .about-section {
+        background: linear-gradient(180deg, #f7f9fc, #eaf1f8);
+      }
+      .about-layout {
+        display: grid;
+        grid-template-columns: 0.86fr 1.14fr;
+        gap: 60px;
+      }
+      .profile-panel {
+        padding: 30px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 16px 35px rgba(21, 53, 88, 0.06);
+      }
+      .profile-rule {
+        width: 42px;
+        height: 4px;
+        border-radius: 8px;
+        background: var(--electric);
+        margin-bottom: 20px;
+      }
+      .profile-copy {
+        margin: 0;
+        color: var(--slate);
+        line-height: 1.8;
+        text-align: justify;
+      }
+      .skills-label {
+        margin: 27px 0 13px;
+        color: var(--navy);
+        font-size: 0.83rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .skill-tag {
+        padding: 8px 11px;
+        border-radius: 7px;
+        background: #dceafd;
+        color: #17436f;
+        font-size: 0.84rem;
+        font-weight: 700;
+      }
+      .timeline {
+        position: relative;
+        padding-left: 26px;
+        border-left: 1px solid #afc5dc;
+      }
+      .timeline-item {
+        position: relative;
+        padding: 0 0 29px 20px;
+      }
+      .timeline-item:last-child {
+        padding-bottom: 0;
+      }
+      .timeline-item:before {
+        content: "";
+        position: absolute;
+        left: -33px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 3px solid #eaf1f8;
+        background: var(--electric);
+      }
+      .timeline-year {
+        margin: 0 0 5px;
+        color: var(--electric);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      .timeline-title {
+        margin: 0;
+        color: var(--navy);
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+      .timeline-copy {
+        margin: 6px 0 0;
+        color: var(--slate);
+        line-height: 1.65;
+        font-size: 0.94rem;
+      }
+      .projects-section {
+        background: #f7f9fc;
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .project-card,
+      .cert-card {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--line);
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(27, 55, 84, 0.05);
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+      .project-card:hover,
+      .cert-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 35px rgba(27, 55, 84, 0.11);
+      }
+      .project-image {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        background: #cbd9e8;
+      }
+      .card-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 22px;
+      }
+      .card-title {
+        margin: 0;
+        color: var(--navy);
+        font-size: 1.24rem;
+        font-weight: 700;
+      }
+      .card-copy {
+        margin: 10px 0 17px;
+        color: var(--slate);
+        line-height: 1.65;
+        font-size: 0.94rem;
+      }
+      .stack-label {
+        margin: auto 0 8px;
+        color: #66809a;
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .tech-stack {
+        margin: 0 0 18px;
+        color: #174e82;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+      .small-action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 42px;
+        padding: 10px 13px;
+        width: fit-content;
+        border: 1px solid #a9c7e5;
+        border-radius: 8px;
+        background: #fff;
+        color: #15558f;
+        cursor: pointer;
+        font-size: 0.86rem;
+        font-weight: 700;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .small-action:hover {
+        background: #177ef6;
+        color: #fff;
+        border-color: #177ef6;
+      }
+      .inline-status {
+        min-height: 24px;
+        margin: 26px 0 0;
+        color: #15558f;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      .certifications-section {
+        background: linear-gradient(135deg, #102b4d, #0a1c36);
+      }
+      .certifications-section .section-heading {
+        color: #fff;
+      }
+      .certifications-section .section-intro {
+        color: #bdd0e2;
+      }
+      .certifications-section .section-kicker {
+        color: #7ebaff;
+      }
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+      .cert-card {
+        padding: 24px;
+        background: rgba(255, 255, 255, 0.95);
+      }
+      .cert-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        color: #fff;
+        background: linear-gradient(135deg, #177ef6, #0c4d9a);
+      }
+      .cert-name {
+        margin: 0;
+        color: var(--navy);
+        font-size: 1.04rem;
+        line-height: 1.35;
+        font-weight: 700;
+      }
+      .cert-issuer {
+        margin: 10px 0 3px;
+        color: var(--slate);
+        font-size: 0.9rem;
+      }
+      .cert-year {
+        margin: 0 0 19px;
+        color: #3975aa;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+      .contact-section {
+        background: #eaf1f8;
+      }
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 0.78fr 1.22fr;
+        gap: 56px;
+        align-items: start;
+      }
+      .contact-details {
+        padding-top: 6px;
+      }
+      .contact-blurb {
+        margin: 18px 0 26px;
+        color: var(--slate);
+        line-height: 1.75;
+      }
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        color: var(--navy);
+        font-weight: 700;
+        text-decoration: none;
+        margin: 12px 0;
+      }
+      .contact-link:hover {
+        color: var(--electric);
+      }
+      .contact-form-wrap {
+        padding: 30px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+      }
+      .form-row {
+        margin-bottom: 18px;
+      }
+      .form-label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--navy);
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+      .form-input {
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 13px;
+        border: 1px solid #b4c8dc;
+        border-radius: 8px;
+        color: var(--navy);
+        background: #fbfdff;
+        font: inherit;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      textarea.form-input {
+        min-height: 132px;
+        resize: vertical;
+      }
+      .form-input:focus {
+        border-color: var(--electric);
+        box-shadow: 0 0 0 3px rgba(23, 126, 246, 0.13);
+        outline: none;
+      }
+      .form-error {
+        min-height: 22px;
+        margin: 0 0 14px;
+        color: #b42318;
+        font-size: 0.88rem;
+        font-weight: 600;
+      }
+      .submit-button {
+        width: 100%;
+        border: 0;
+      }
+      .submit-button:disabled {
+        opacity: 0.62;
+        cursor: wait;
+        transform: none;
+      }
+      .success-state {
+        text-align: center;
+        padding: 24px 0 8px;
+      }
+      .success-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        margin-bottom: 17px;
+        border-radius: 50%;
+        color: #fff;
+        background: #177ef6;
+      }
+      .success-title {
+        margin: 0;
+        color: var(--navy);
+        font-size: 1.45rem;
+        font-weight: 700;
+      }
+      .success-copy {
+        margin: 10px 0 0;
+        color: var(--slate);
+        line-height: 1.65;
+      }
+      .site-footer {
+        padding: 28px 0;
+        background: #07172f;
+        text-align: center;
+      }
+      .footer-copy {
+        margin: 0;
+        color: #b9ccde;
+        font-size: 0.86rem;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(15px);
+        transition:
+          opacity 450ms cubic-bezier(0.22, 1, 0.36, 1),
+          transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @media (max-width: 900px) {
+        .hero-grid,
+        .about-layout,
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 42px;
+        }
+        .abstract-visual {
+          max-width: 470px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .about-heading {
+          width: 100%;
+        }
+        .card-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .cert-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 680px) {
+        .portfolio-width {
+          width: min(100% - 32px, 1160px);
+        }
+        .desktop-menu {
+          display: none;
+        }
+        .menu-button {
+          display: inline-flex;
+        }
+        .hero-section {
+          padding: 66px 0 80px;
+        }
+        .section-block {
+          padding: 74px 0;
+        }
+        .card-grid,
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+        .abstract-visual {
+          min-height: 330px;
+          transform: scale(0.9);
+          transform-origin: top center;
+          margin-bottom: -28px;
+        }
+        .profile-photo-frame {
+          right: 8px;
+          top: 6px;
+          width: 290px;
+          height: 350px;
+        }
+        .profile-photo {
+          object-position: center 16%;
+        }
+        .glass-main {
+          left: 4px;
+        }
+        .orb-one {
+          right: 5px;
+        }
+        .site-header {
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          background: rgba(247, 249, 252, 0.97);
+        }
+        .glass-card {
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          background: rgba(255, 255, 255, 0.16);
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
+        }
+        .reveal {
+          transform: translateY(11px);
+          transition-duration: 375ms;
+        }
+        .project-card,
+        .cert-card,
+        .profile-panel {
+          box-shadow: 0 6px 16px rgba(27, 55, 84, 0.05);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+        [data-parallax] {
+          transform: none !important;
+          will-change: auto;
+        }
+      }
+      [data-parallax] {
+        will-change: transform;
+        backface-visibility: hidden;
+      }
+      @media (max-width: 680px) {
+        [data-parallax] {
+          will-change: auto;
+        }
+      }
+    </style>
+    <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
+  </head>
+  <body data-template-id="__page-root">
+    <div class="site-shell">
+      <header class="site-header canva-header" data-template-id="site-header" style="background: rgb(247, 249, 252)">
+        <div class="portfolio-width header-inner">
+          <a href="#home" class="brand-mark" aria-label="Back to home"
+            ><span class="brand-dot" aria-hidden="true"></span><span data-template-id="brand-name" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">APRIA DIVA PUTRI</span></a
+          >
+          <nav class="desktop-menu canva-menu" aria-label="Primary navigation">
+            <a data-template-id="nav-home" class="canva-link" href="#home" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Home</a
+            ><a data-template-id="nav-about" class="canva-link" href="#about" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">About Me</a
+            ><a data-template-id="nav-projects" class="canva-link" href="#projects" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Projects</a
+            ><a data-template-id="nav-certifications" class="canva-link" href="#certifications" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Certifications</a
+            ><a data-template-id="nav-contact" class="canva-link" href="#contact" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Contact</a>
+          </nav>
+          <button id="menu-toggle" class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"><i data-lucide="menu" aria-hidden="true"></i></button>
+        </div>
+        <nav id="mobile-menu" class="mobile-menu canva-menu" aria-label="Mobile navigation">
+          <a data-template-id="mobile-nav-home" class="canva-link" href="#home" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Home</a
+          ><a data-template-id="mobile-nav-about" class="canva-link" href="#about" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">About Me</a
+          ><a data-template-id="mobile-nav-projects" class="canva-link" href="#projects" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Projects</a
+          ><a data-template-id="mobile-nav-certifications" class="canva-link" href="#certifications" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Certifications</a
+          ><a data-template-id="mobile-nav-contact" class="canva-link" href="#contact" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <section id="home" class="hero-section canva-section" data-template-id="hero-section" style="background: linear-gradient(135deg, rgb(23, 105, 170), rgb(113, 128, 150), rgb(255, 255, 255))">
+          <div class="portfolio-width hero-grid">
+            <div>
+              <p data-template-id="hero-eyebrow" class="eyebrow canva-text reveal" style="color: rgb(185, 219, 255); font-weight: 700; font-style: normal; font-size: 21px">Personal Portfolio</p>
+              <h1 data-template-id="hero-heading" class="hero-heading display-face canva-text reveal" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 41px">
+                <span data-template-id="hero-heading-intro" class="canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 41px">Hi, I'm</span
+                ><span data-template-id="hero-heading-name" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 41px"> Apria Diva Putri</span>
+              </h1>
+              <p data-template-id="hero-name" class="hero-name canva-text reveal" style="color: rgb(217, 234, 255); font-weight: 700; font-style: normal; font-size: 17px">Mathematics Graduate | Data &amp; Finance | Analytical Thinking</p>
+              <p data-template-id="hero-description" class="hero-copy canva-text reveal" style="color: rgb(199, 215, 232); font-weight: 400; font-style: normal; font-size: 17px">
+                I enjoy working with numbers and data, uncovering meaningful patterns, and turning them into insights that support better decisions
+              </p>
+              <div class="button-row reveal">
+                <a
+                  data-template-id="hero-projects-button"
+                  class="action-button primary-action canva-button"
+                  href="#projects"
+                  style="background: rgb(23, 126, 246); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px"
+                  >View Projects</a
+                ><a data-template-id="hero-cv-button" class="small-action canva-button" href="#cv" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                  ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+                  ><span data-template-id="hero-cv-button-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View CV</span></a
+                ><a
+                  data-template-id="hero-contact-button"
+                  class="action-button secondary-action canva-button"
+                  href="#contact"
+                  style="background: rgba(255, 255, 255, 0.05); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px"
+                  >Get in Touch</a
+                >
+              </div>
+            </div>
+            <div class="abstract-visual" aria-label="Abstract portfolio visual">
+              <div class="profile-photo-frame">
+                <img
+                  data-template-id="hero-profile-photo"
+                  class="profile-photo canva-image"
+                  loading="eager"
+                  decoding="async"
+                  src="D:\KARIER^^\porto di github io\images\profile.png"
+                  alt="Professional portrait of a woman wearing a black hijab and suit against a blue background"
+                /><span data-template-id="profile-photo-hint" class="profile-photo-hint canva-text" style="color: rgb(255, 255, 255); font-weight: 600"></span>
+              </div>
+              <div class="orb orb-one" data-parallax="0.28"></div>
+              <div class="orb orb-two" data-parallax="0.18"></div>
+              <div class="glass-card glass-main">
+                <div class="glass-line blue"></div>
+                <div class="glass-line"></div>
+                <div class="glass-line short"></div>
+                <div class="glass-chip"></div>
+              </div>
+              <div class="glass-card glass-small"></div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="about-section section-block canva-section" data-template-id="about-section" style="background: rgb(234, 241, 248)">
+          <div class="portfolio-width">
+            <div class="section-top reveal">
+              <p data-template-id="about-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">About Me</p>
+              <h2 data-template-id="about-heading" class="section-heading about-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px">
+                A curious mind driven by numbers, data, and meaningful insights
+              </h2>
+            </div>
+            <div class="about-layout">
+              <article class="profile-panel canva-panel reveal" data-template-id="profile-panel" style="background: rgb(255, 255, 255)">
+                <div class="profile-rule"></div>
+                <p data-template-id="about-profile" class="profile-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                  I am a Mathematics graduate with a strong interest in data analytics, finance, and accounting. I enjoy working with numbers, identifying patterns, and solving problems through logical and analytical thinking. I am eager to
+                  apply my quantitative skills to support data-driven and financial decision-making.
+                </p>
+                <p data-template-id="skills-label" class="skills-label canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Core Skills</p>
+                <div class="skills">
+                  <span data-template-id="skill-1" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Data Analysis</span
+                  ><span data-template-id="skill-2" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Statistical Analysis</span
+                  ><span data-template-id="skill-3" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Python</span
+                  ><span data-template-id="skill-4" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Microsoft Excel</span
+                  ><span data-template-id="skill-5" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">SQL</span
+                  ><span data-template-id="skill-6" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Data Visualizations</span>
+                </div>
+              </article>
+              <div class="timeline reveal" aria-label="Professional timeline">
+                <article class="timeline-item reveal">
+                  <p data-template-id="milestone-1-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">2026</p>
+                  <h3 data-template-id="milestone-1-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Fresh Graduate &amp; Best Graduate</h3>
+                  <p data-template-id="milestone-1-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    Graduated with a B.Sc. in Mathematics from Andalas University with a 3.97/4.00 GPA and was recognized as the Best Graduate of the Mathematics Study Program during the Fourth Graduation Period of 2026.
+                  </p>
+                </article>
+                <article class="timeline-item reveal">
+                  <p data-template-id="milestone-2-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">2024 — 2026</p>
+                  <h3 data-template-id="milestone-2-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Computation Laboratory Assistant</h3>
+                  <p data-template-id="milestone-2-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    Supported computational and statistics courses while also serving as Secretary and Treasurer, contributing to laboratory administration, documentation, and financial record-keeping.
+                  </p>
+                </article>
+                <article class="timeline-item reveal">
+                  <p data-template-id="milestone-3-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">2023 — 2026</p>
+                  <h3 data-template-id="milestone-3-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Teaching Assistant — Mathematics</h3>
+                  <p data-template-id="milestone-3-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    Assisted students across Calculus, Analytical Geometry, and Introductory Statistics through tutorials, exercises, feedback, and academic discussions.
+                  </p>
+                </article>
+                <article class="timeline-item reveal">
+                  <p data-template-id="milestone-4-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">2025</p>
+                  <h3 data-template-id="milestone-4-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Marketing Staff — Neo Telemetri</h3>
+                  <p data-template-id="milestone-4-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    Supported project administration, financial records, marketing content, and project tracking while collaborating across teams.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="projects-section section-block canva-section" data-template-id="projects-section" style="background: rgb(247, 249, 252)">
+          <div class="portfolio-width">
+            <div class="section-top reveal">
+              <p data-template-id="projects-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">Selected Work</p>
+              <h2 data-template-id="projects-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px">Turning curiosity into analytical work</h2>
+              <p data-template-id="projects-intro" class="section-intro canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                A selection of projects across data analytics, machine learning, finance, and accounting, reflecting my quantitative background and continuous learning
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="project-card canva-card reveal" data-template-id="project-card-1" style="background: rgb(255, 255, 255)">
+                <img data-template-id="project-image-1" class="project-image canva-image" loading="lazy" src="canva://MAHTxy_dgmk/1" alt="Close-up of a computer screen displaying ChatGPT interface in a dark setting." />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-1" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">GRU Performance Evaluation for Indonesian Inflation</h3>
+                  <p data-template-id="project-description-1" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    Evaluating how interest-rate and Rupiah exchange-rate variables influence GRU-based inflation modeling performance
+                  </p>
+                  <p data-template-id="tech-label-1" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">DEEP LEARNING · TIME SERIES · ECONOMIC FORECASTING</p>
+                  <p data-template-id="project-tech-1" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Python · TensorFlow · Scikit-learn</p>
+                  <a data-template-id="project-button-1" class="small-action canva-button" href="http://canva.link/wgm089hv9nbeyzu" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                    ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span></a
+                  >
+                </div>
+              </article>
+              <article class="project-card canva-card reveal" data-template-id="project-card-2" style="background: rgb(255, 255, 255)">
+                <img data-template-id="project-image-2" class="project-image canva-image" loading="lazy" src="canva://MAE1_FirT8E/1" alt="Modern smartphone mockup on marble surface with coffee. Ideal for app design presentations." />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-2" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Wellness Mobile App</h3>
+                  <p data-template-id="project-description-2" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    A placeholder mobile experience for helping people build calmer, more intentional daily routines.
+                  </p>
+                  <p data-template-id="tech-label-2" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
+                  <p data-template-id="project-tech-2" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">UX Research · Figma · Prototype</p>
+                  <button data-template-id="project-button-2" class="small-action project-trigger canva-button" data-project="Project 02" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
+                  </button>
+                </div>
+              </article>
+              <article class="project-card canva-card reveal" data-template-id="project-card-3" style="background: rgb(255, 255, 255)">
+                <img
+                  data-template-id="project-image-3"
+                  class="project-image canva-image"
+                  loading="lazy"
+                  src="https://images.pexels.com/photos/5585800/pexels-photo-5585800.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+                  alt="A woman sits comfortably indoors, browsing an online shopping website on her laptop."
+                />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-3" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">E-commerce Refresh</h3>
+                  <p data-template-id="project-description-3" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    A placeholder storefront redesign that improves discovery, confidence, and the path to purchase.
+                  </p>
+                  <p data-template-id="tech-label-3" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
+                  <p data-template-id="project-tech-3" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Shopify · UI Design · CRO</p>
+                  <button data-template-id="project-button-3" class="small-action project-trigger canva-button" data-project="Project 03" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
+                  </button>
+                </div>
+              </article>
+              <article class="project-card canva-card reveal" data-template-id="project-card-4" style="background: rgb(255, 255, 255)">
+                <img
+                  data-template-id="project-image-4"
+                  class="project-image canva-image"
+                  loading="lazy"
+                  src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+                  alt="Sleek laptop showcasing data analytics and graphs on the screen in a bright room."
+                />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-4" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Insights Platform</h3>
+                  <p data-template-id="project-description-4" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    A placeholder analytics product that translates performance signals into clear decisions.
+                  </p>
+                  <p data-template-id="tech-label-4" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
+                  <p data-template-id="project-tech-4" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Data Viz · Figma · Design System</p>
+                  <button data-template-id="project-button-4" class="small-action project-trigger canva-button" data-project="Project 04" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
+                  </button>
+                </div>
+              </article>
+              <article class="project-card canva-card reveal" data-template-id="project-card-5" style="background: rgb(255, 255, 255)">
+                <img
+                  data-template-id="project-image-5"
+                  class="project-image canva-image"
+                  loading="lazy"
+                  src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+                  alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace."
+                />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-5" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Studio Portfolio Site</h3>
+                  <p data-template-id="project-description-5" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    A placeholder portfolio website balancing visual personality, project storytelling, and clarity.
+                  </p>
+                  <p data-template-id="tech-label-5" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
+                  <p data-template-id="project-tech-5" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Webflow · Art Direction · CMS</p>
+                  <button data-template-id="project-button-5" class="small-action project-trigger canva-button" data-project="Project 05" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-5-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
+                  </button>
+                </div>
+              </article>
+              <article class="project-card canva-card reveal" data-template-id="project-card-6" style="background: rgb(255, 255, 255)">
+                <img
+                  data-template-id="project-image-6"
+                  class="project-image canva-image"
+                  loading="lazy"
+                  src="https://images.pexels.com/photos/7662060/pexels-photo-7662060.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
+                  alt="Close-up of smartphone showing a social media profile screen next to a laptop."
+                />
+                <div class="card-content reveal">
+                  <h3 data-template-id="project-title-6" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Community Platform</h3>
+                  <p data-template-id="project-description-6" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                    A placeholder social platform concept designed to create more meaningful digital connections.
+                  </p>
+                  <p data-template-id="tech-label-6" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
+                  <p data-template-id="project-tech-6" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Product Strategy · UI · Testing</p>
+                  <button data-template-id="project-button-6" class="small-action project-trigger canva-button" data-project="Project 06" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-6-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+            <p id="project-status" class="inline-status" aria-live="polite"></p>
+          </div>
+        </section>
+        <section id="certifications" class="certifications-section section-block canva-section" data-template-id="certifications-section" style="background: rgb(10, 28, 54)">
+          <div class="portfolio-width">
+            <div class="section-top reveal">
+              <p data-template-id="certifications-kicker" class="section-kicker canva-text" style="color: rgb(126, 186, 255); font-weight: 700; font-style: normal; font-size: 16px">Credentials</p>
+              <h2 data-template-id="certifications-heading" class="section-heading display-face canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px">
+                Certifications &amp; continuous learning.
+              </h2>
+              <p data-template-id="certifications-intro" class="section-intro canva-text" style="color: rgb(189, 208, 226); font-weight: 400; font-style: normal; font-size: 16px">
+                Replace these placeholders with credentials, workshops, professional programs, and completed courses.
+              </p>
+            </div>
+            <div class="cert-grid">
+              <article data-template-id="cert-card-1" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon reveal">
+                  <i data-lucide="award"></i>
+                </div>
+                <h3 data-template-id="cert-name-1" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Google UX Design Certificate</h3>
+                <p data-template-id="cert-issuer-1" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Google Career Certificates</p>
+                <p data-template-id="cert-year-1" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2025</p>
+                <button data-template-id="cert-button-1" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i
+                  ><span data-template-id="cert-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
+                </button>
+              </article>
+              <article data-template-id="cert-card-2" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon reveal">
+                  <i data-lucide="award"></i>
+                </div>
+                <h3 data-template-id="cert-name-2" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Professional Scrum Master I</h3>
+                <p data-template-id="cert-issuer-2" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Scrum.org</p>
+                <p data-template-id="cert-year-2" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2024</p>
+                <button data-template-id="cert-button-2" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i
+                  ><span data-template-id="cert-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
+                </button>
+              </article>
+              <article data-template-id="cert-card-3" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon reveal">
+                  <i data-lucide="award"></i>
+                </div>
+                <h3 data-template-id="cert-name-3" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Design Systems Fundamentals</h3>
+                <p data-template-id="cert-issuer-3" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Placeholder Learning Platform</p>
+                <p data-template-id="cert-year-3" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2023</p>
+                <button data-template-id="cert-button-3" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i
+                  ><span data-template-id="cert-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
+                </button>
+              </article>
+              <article data-template-id="cert-card-4" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon reveal">
+                  <i data-lucide="award"></i>
+                </div>
+                <h3 data-template-id="cert-name-4" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Accessibility for Digital Products</h3>
+                <p data-template-id="cert-issuer-4" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Placeholder Learning Platform</p>
+                <p data-template-id="cert-year-4" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2022</p>
+                <button data-template-id="cert-button-4" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i
+                  ><span data-template-id="cert-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
+                </button>
+              </article>
+            </div>
+            <p id="certificate-status" class="inline-status" style="color: #b9dbff" aria-live="polite"></p>
+          </div>
+        </section>
+        <section id="contact" class="contact-section section-block canva-section" data-template-id="contact-section" style="background: rgb(234, 241, 248)">
+          <div class="portfolio-width contact-layout">
+            <div class="contact-details reveal">
+              <p data-template-id="contact-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">Get in Touch</p>
+              <h2 data-template-id="contact-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px">Let’s create something meaningful.</h2>
+              <p data-template-id="contact-description" class="contact-blurb canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                Have a project, collaboration, or interesting idea in mind? I would love to hear from you.
+              </p>
+              <a data-template-id="contact-email" class="contact-link canva-link" href="mailto:apriadivaputri@gmail.com" style="color: rgb(9, 26, 51)"
+                ><i data-lucide="mail" aria-hidden="true"></i
+                ><span data-template-id="contact-email-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">apriadivaputri@gmail.com</span></a
+              >
+              <a
+                data-template-id="linkedin-link"
+                class="contact-link canva-link"
+                href="https://www.linkedin.com/in/apriadivaputri/"
+                target="_blank"
+                rel="noopener noreferrer"
+                referrerpolicy="no-referrer"
+                aria-label="Open LinkedIn profile in a new tab"
+                style="color: rgb(9, 26, 51)"
+                ><i data-lucide="linkedin" aria-hidden="true"></i
+                ><span data-template-id="linkedin-link-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">www.linkedin.com/in/apriadivaputri/</span></a
+              >
+              <a
+                data-template-id="instagram-link"
+                class="contact-link canva-link"
+                href="https://www.instagram.com/apriadiva/"
+                target="_blank"
+                rel="noopener noreferrer"
+                referrerpolicy="no-referrer"
+                aria-label="Open Instagram profile in a new tab"
+                style="color: rgb(9, 26, 51)"
+                ><i data-lucide="instagram" aria-hidden="true"></i><span data-template-id="instagram-link-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">apriadiva</span></a
+              >
+            </div>
+            <div class="contact-form-wrap canva-panel reveal">
+              <form id="contact-form" class="reveal" novalidate="">
+                <div class="form-row reveal">
+                  <label data-template-id="name-label" class="form-label canva-text" for="contact-name" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Name</label
+                  ><input data-template-id="name-input" class="form-input canva-input" id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" style="font-weight: 400; font-style: normal; font-size: 16px" />
+                </div>
+                <div class="form-row reveal">
+                  <label data-template-id="email-label" class="form-label canva-text" for="contact-email-input" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Email</label
+                  ><input
+                    data-template-id="email-input"
+                    class="form-input canva-input"
+                    id="contact-email-input"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    style="font-weight: 400; font-style: normal; font-size: 16px"
+                  />
+                </div>
+                <div class="form-row reveal">
+                  <label data-template-id="message-label" class="form-label canva-text" for="contact-message" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Message</label
+                  ><textarea data-template-id="message-input" class="form-input canva-input" id="contact-message" name="message" style="font-weight: 400; font-style: normal; font-size: 16px">Tell me a little about your project...</textarea>
+                </div>
+                <p id="form-error" class="form-error" aria-live="assertive"></p>
+                <button
+                  data-template-id="submit-button"
+                  class="action-button primary-action submit-button canva-button"
+                  type="submit"
+                  style="background: rgb(23, 126, 246); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px"
+                >
+                  Send Message
+                </button>
+              </form>
+              <div id="success-state" class="success-state" hidden="" aria-live="polite">
+                <div class="success-icon">
+                  <i data-lucide="check"></i>
+                </div>
+                <h3 data-template-id="success-title" class="success-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Message received!</h3>
+                <p data-template-id="success-description" class="success-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
+                  Thank you for reaching out. Your message has been saved and I will be in touch soon.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer data-template-id="site-footer" class="site-footer canva-footer" style="background: rgb(7, 23, 47)">
+        <div class="portfolio-width">
+          <p data-template-id="footer-copy" class="footer-copy canva-text" style="color: rgb(185, 204, 222); font-weight: 400; font-style: normal; font-size: 16px">© 2026 Apria Diva Putri. Built with intention.</p>
+        </div>
+      </footer>
     </div>
-    <nav id="mobile-menu" class="mobile-menu canva-menu" aria-label="Mobile navigation"><a data-template-id="mobile-nav-home" class="canva-link" href="#home" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Home</a><a data-template-id="mobile-nav-about" class="canva-link" href="#about" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">About Me</a><a data-template-id="mobile-nav-projects" class="canva-link" href="#projects" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Projects</a><a data-template-id="mobile-nav-certifications" class="canva-link" href="#certifications" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Certifications</a><a data-template-id="mobile-nav-contact" class="canva-link" href="#contact" style="color: rgb(64, 83, 106); font-weight: 600; font-style: normal; font-size: 16px;">Contact</a>
-    </nav>
-   </header>
-   <main>
-    <section id="home" class="hero-section canva-section" data-template-id="hero-section" style="background: linear-gradient(135deg, rgb(23, 105, 170), rgb(113, 128, 150), rgb(255, 255, 255));">
-     <div class="portfolio-width hero-grid">
-      <div>
-       <p data-template-id="hero-eyebrow" class="eyebrow canva-text reveal" style="color: rgb(185, 219, 255); font-weight: 700; font-style: normal; font-size: 21px;">Personal Portfolio</p>
-       <h1 data-template-id="hero-heading" class="hero-heading display-face canva-text reveal" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 41px;"><span data-template-id="hero-heading-intro" class="canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 41px;">Hi, I'm</span><span data-template-id="hero-heading-name" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 41px;"> Apria Diva Putri</span></h1>
-       <p data-template-id="hero-name" class="hero-name canva-text reveal" style="color: rgb(217, 234, 255); font-weight: 700; font-style: normal; font-size: 17px;">Mathematics Graduate | Data &amp; Finance | Analytical Thinking</p>
-       <p data-template-id="hero-description" class="hero-copy canva-text reveal" style="color: rgb(199, 215, 232); font-weight: 400; font-style: normal; font-size: 17px;">I enjoy working with numbers and data, uncovering meaningful patterns, and turning them into insights that support better decisions</p>
-       <div class="button-row reveal">
-        <a data-template-id="hero-projects-button" class="action-button primary-action canva-button" href="#projects" style="background: rgb(23, 126, 246); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">View Projects</a><a data-template-id="hero-cv-button" class="small-action canva-button" href="#cv" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="hero-cv-button-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View CV</span></a><a data-template-id="hero-contact-button" class="action-button secondary-action canva-button" href="#contact" style="background: rgba(255, 255, 255, 0.05); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Get in Touch</a>
-       </div>
-      </div>
-      <div class="abstract-visual" aria-label="Abstract portfolio visual">
-       <div class="profile-photo-frame">
-        <img data-template-id="hero-profile-photo" class="profile-photo canva-image" loading="eager" decoding="async" src="canva://MAHTr7bPjaU/1" alt="Professional portrait of a woman wearing a black hijab and suit against a blue background"><span data-template-id="profile-photo-hint" class="profile-photo-hint canva-text" style="color: rgb(255, 255, 255); font-weight: 600;"></span>
-       </div>
-       <div class="orb orb-one" data-parallax="0.28"></div>
-       <div class="orb orb-two" data-parallax="0.18"></div>
-       <div class="glass-card glass-main">
-        <div class="glass-line blue"></div>
-        <div class="glass-line"></div>
-        <div class="glass-line short"></div>
-        <div class="glass-chip"></div>
-       </div>
-       <div class="glass-card glass-small"></div>
-      </div>
-     </div>
-    </section>
-    <section id="about" class="about-section section-block canva-section" data-template-id="about-section" style="background: rgb(234, 241, 248);">
-     <div class="portfolio-width">
-      <div class="section-top reveal">
-       <p data-template-id="about-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">About Me</p>
-       <h2 data-template-id="about-heading" class="section-heading about-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px;">A curious mind driven by numbers, data, and meaningful insights</h2>
-      </div>
-      <div class="about-layout">
-       <article class="profile-panel canva-panel reveal" data-template-id="profile-panel" style="background: rgb(255, 255, 255);">
-        <div class="profile-rule"></div>
-        <p data-template-id="about-profile" class="profile-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">I am a Mathematics graduate with a strong interest in data analytics, finance, and accounting. I enjoy working with numbers, identifying patterns, and solving problems through logical and analytical thinking. I am eager to apply my quantitative skills to support data-driven and financial decision-making.</p>
-        <p data-template-id="skills-label" class="skills-label canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">Core Skills</p>
-        <div class="skills">
-         <span data-template-id="skill-1" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">Data Analysis</span><span data-template-id="skill-2" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">Statistical Analysis</span><span data-template-id="skill-3" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">Python</span><span data-template-id="skill-4" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">Microsoft Excel</span><span data-template-id="skill-5" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">SQL</span><span data-template-id="skill-6" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px;">Data Visualizations</span>
-        </div>
-       </article>
-       <div class="timeline reveal" aria-label="Professional timeline">
-        <article class="timeline-item reveal">
-         <p data-template-id="milestone-1-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">2026</p>
-         <h3 data-template-id="milestone-1-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Fresh Graduate &amp; Best Graduate</h3>
-         <p data-template-id="milestone-1-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Graduated with a B.Sc. in Mathematics from Andalas University with a 3.97/4.00 GPA and was recognized as the Best Graduate of the Mathematics Study Program during the Fourth Graduation Period of 2026.</p>
-        </article>
-        <article class="timeline-item reveal">
-         <p data-template-id="milestone-2-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">2024 — 2026</p>
-         <h3 data-template-id="milestone-2-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Computation Laboratory Assistant</h3>
-         <p data-template-id="milestone-2-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Supported computational and statistics courses while also serving as Secretary and Treasurer, contributing to laboratory administration, documentation, and financial record-keeping.</p>
-        </article>
-        <article class="timeline-item reveal">
-         <p data-template-id="milestone-3-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">2023 — 2026</p>
-         <h3 data-template-id="milestone-3-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Teaching Assistant — Mathematics</h3>
-         <p data-template-id="milestone-3-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Assisted students across Calculus, Analytical Geometry, and Introductory Statistics through tutorials, exercises, feedback, and academic discussions.</p>
-        </article>
-        <article class="timeline-item reveal">
-         <p data-template-id="milestone-4-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">2025</p>
-         <h3 data-template-id="milestone-4-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Marketing Staff — Neo Telemetri</h3>
-         <p data-template-id="milestone-4-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Supported project administration, financial records, marketing content, and project tracking while collaborating across teams.</p>
-        </article>
-       </div>
-      </div>
-     </div>
-    </section>
-    <section id="projects" class="projects-section section-block canva-section" data-template-id="projects-section" style="background: rgb(247, 249, 252);">
-     <div class="portfolio-width">
-      <div class="section-top reveal">
-       <p data-template-id="projects-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">Selected Work</p>
-       <h2 data-template-id="projects-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px;">Turning curiosity into analytical work</h2>
-       <p data-template-id="projects-intro" class="section-intro canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A selection of projects across data analytics, machine learning, finance, and accounting, reflecting my quantitative background and continuous learning</p>
-      </div>
-      <div class="card-grid">
-       <article class="project-card canva-card reveal" data-template-id="project-card-1" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-1" class="project-image canva-image" loading="lazy" src="canva://MAHTxy_dgmk/1" alt="Close-up of a computer screen displaying ChatGPT interface in a dark setting.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-1" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">GRU Performance Evaluation for Indonesian Inflation</h3>
-         <p data-template-id="project-description-1" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Evaluating how interest-rate and Rupiah exchange-rate variables influence GRU-based inflation modeling performance
-</p>
-         <p data-template-id="tech-label-1" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">DEEP LEARNING · TIME SERIES · ECONOMIC FORECASTING</p>
-         <p data-template-id="project-tech-1" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">Python · TensorFlow · Scikit-learn</p><a data-template-id="project-button-1" class="small-action canva-button" href="http://canva.link/wgm089hv9nbeyzu" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></a>
-        </div>
-       </article>
-       <article class="project-card canva-card reveal" data-template-id="project-card-2" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-2" class="project-image canva-image" loading="lazy" src="canva://MAE1_FirT8E/1" alt="Modern smartphone mockup on marble surface with coffee. Ideal for app design presentations.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-2" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Wellness Mobile App</h3>
-         <p data-template-id="project-description-2" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A placeholder mobile experience for helping people build calmer, more intentional daily routines.</p>
-         <p data-template-id="tech-label-2" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">Tech Stack</p>
-         <p data-template-id="project-tech-2" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">UX Research · Figma · Prototype</p><button data-template-id="project-button-2" class="small-action project-trigger canva-button" data-project="Project 02" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></button>
-        </div>
-       </article>
-       <article class="project-card canva-card reveal" data-template-id="project-card-3" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-3" class="project-image canva-image" loading="lazy" src="https://images.pexels.com/photos/5585800/pexels-photo-5585800.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A woman sits comfortably indoors, browsing an online shopping website on her laptop.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-3" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">E-commerce Refresh</h3>
-         <p data-template-id="project-description-3" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A placeholder storefront redesign that improves discovery, confidence, and the path to purchase.</p>
-         <p data-template-id="tech-label-3" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">Tech Stack</p>
-         <p data-template-id="project-tech-3" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">Shopify · UI Design · CRO</p><button data-template-id="project-button-3" class="small-action project-trigger canva-button" data-project="Project 03" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></button>
-        </div>
-       </article>
-       <article class="project-card canva-card reveal" data-template-id="project-card-4" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-4" class="project-image canva-image" loading="lazy" src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Sleek laptop showcasing data analytics and graphs on the screen in a bright room.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-4" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Insights Platform</h3>
-         <p data-template-id="project-description-4" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A placeholder analytics product that translates performance signals into clear decisions.</p>
-         <p data-template-id="tech-label-4" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">Tech Stack</p>
-         <p data-template-id="project-tech-4" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">Data Viz · Figma · Design System</p><button data-template-id="project-button-4" class="small-action project-trigger canva-button" data-project="Project 04" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></button>
-        </div>
-       </article>
-       <article class="project-card canva-card reveal" data-template-id="project-card-5" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-5" class="project-image canva-image" loading="lazy" src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-5" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Studio Portfolio Site</h3>
-         <p data-template-id="project-description-5" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A placeholder portfolio website balancing visual personality, project storytelling, and clarity.</p>
-         <p data-template-id="tech-label-5" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">Tech Stack</p>
-         <p data-template-id="project-tech-5" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">Webflow · Art Direction · CMS</p><button data-template-id="project-button-5" class="small-action project-trigger canva-button" data-project="Project 05" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-5-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></button>
-        </div>
-       </article>
-       <article class="project-card canva-card reveal" data-template-id="project-card-6" style="background: rgb(255, 255, 255);">
-        <img data-template-id="project-image-6" class="project-image canva-image" loading="lazy" src="https://images.pexels.com/photos/7662060/pexels-photo-7662060.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Close-up of smartphone showing a social media profile screen next to a laptop.">
-        <div class="card-content reveal">
-         <h3 data-template-id="project-title-6" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Community Platform</h3>
-         <p data-template-id="project-description-6" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">A placeholder social platform concept designed to create more meaningful digital connections.</p>
-         <p data-template-id="tech-label-6" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px;">Tech Stack</p>
-         <p data-template-id="project-tech-6" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px;">Product Strategy · UI · Testing</p><button data-template-id="project-button-6" class="small-action project-trigger canva-button" data-project="Project 06" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="arrow-up-right" aria-hidden="true"></i><span data-template-id="project-button-6-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Project</span></button>
-        </div>
-       </article>
-      </div>
-      <p id="project-status" class="inline-status" aria-live="polite"></p>
-     </div>
-    </section>
-    <section id="certifications" class="certifications-section section-block canva-section" data-template-id="certifications-section" style="background: rgb(10, 28, 54);">
-     <div class="portfolio-width">
-      <div class="section-top reveal">
-       <p data-template-id="certifications-kicker" class="section-kicker canva-text" style="color: rgb(126, 186, 255); font-weight: 700; font-style: normal; font-size: 16px;">Credentials</p>
-       <h2 data-template-id="certifications-heading" class="section-heading display-face canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Certifications &amp; continuous learning.</h2>
-       <p data-template-id="certifications-intro" class="section-intro canva-text" style="color: rgb(189, 208, 226); font-weight: 400; font-style: normal; font-size: 16px;">Replace these placeholders with credentials, workshops, professional programs, and completed courses.</p>
-      </div>
-      <div class="cert-grid">
-       <article data-template-id="cert-card-1" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255);">
-        <div class="cert-icon reveal">
-         <i data-lucide="award"></i>
-        </div>
-        <h3 data-template-id="cert-name-1" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Google UX Design Certificate</h3>
-        <p data-template-id="cert-issuer-1" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Google Career Certificates</p>
-        <p data-template-id="cert-year-1" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px;">2025</p><button data-template-id="cert-button-1" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="external-link" aria-hidden="true"></i><span data-template-id="cert-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Certificate</span></button>
-       </article>
-       <article data-template-id="cert-card-2" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255);">
-        <div class="cert-icon reveal">
-         <i data-lucide="award"></i>
-        </div>
-        <h3 data-template-id="cert-name-2" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Professional Scrum Master I</h3>
-        <p data-template-id="cert-issuer-2" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Scrum.org</p>
-        <p data-template-id="cert-year-2" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px;">2024</p><button data-template-id="cert-button-2" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="external-link" aria-hidden="true"></i><span data-template-id="cert-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Certificate</span></button>
-       </article>
-       <article data-template-id="cert-card-3" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255);">
-        <div class="cert-icon reveal">
-         <i data-lucide="award"></i>
-        </div>
-        <h3 data-template-id="cert-name-3" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Design Systems Fundamentals</h3>
-        <p data-template-id="cert-issuer-3" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Placeholder Learning Platform</p>
-        <p data-template-id="cert-year-3" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px;">2023</p><button data-template-id="cert-button-3" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="external-link" aria-hidden="true"></i><span data-template-id="cert-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Certificate</span></button>
-       </article>
-       <article data-template-id="cert-card-4" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255);">
-        <div class="cert-icon reveal">
-         <i data-lucide="award"></i>
-        </div>
-        <h3 data-template-id="cert-name-4" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Accessibility for Digital Products</h3>
-        <p data-template-id="cert-issuer-4" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Placeholder Learning Platform</p>
-        <p data-template-id="cert-year-4" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px;">2022</p><button data-template-id="cert-button-4" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143);"><i data-lucide="external-link" aria-hidden="true"></i><span data-template-id="cert-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px;">View Certificate</span></button>
-       </article>
-      </div>
-      <p id="certificate-status" class="inline-status" style="color:#b9dbff" aria-live="polite"></p>
-     </div>
-    </section>
-    <section id="contact" class="contact-section section-block canva-section" data-template-id="contact-section" style="background: rgb(234, 241, 248);">
-     <div class="portfolio-width contact-layout">
-      <div class="contact-details reveal">
-       <p data-template-id="contact-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px;">Get in Touch</p>
-       <h2 data-template-id="contact-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px;">Let’s create something meaningful.</h2>
-       <p data-template-id="contact-description" class="contact-blurb canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Have a project, collaboration, or interesting idea in mind? I would love to hear from you.</p><a data-template-id="contact-email" class="contact-link canva-link" href="mailto:apriadivaputri@gmail.com" style="color: rgb(9, 26, 51);"><i data-lucide="mail" aria-hidden="true"></i><span data-template-id="contact-email-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">apriadivaputri@gmail.com</span></a> <a data-template-id="linkedin-link" class="contact-link canva-link" href="https://www.linkedin.com/in/apriadivaputri/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Open LinkedIn profile in a new tab" style="color: rgb(9, 26, 51);"><i data-lucide="linkedin" aria-hidden="true"></i><span data-template-id="linkedin-link-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">www.linkedin.com/in/apriadivaputri/</span></a> <a data-template-id="instagram-link" class="contact-link canva-link" href="https://www.instagram.com/apriadiva/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Open Instagram profile in a new tab" style="color: rgb(9, 26, 51);"><i data-lucide="instagram" aria-hidden="true"></i><span data-template-id="instagram-link-label" class="canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">apriadiva</span></a>
-      </div>
-      <div class="contact-form-wrap canva-panel reveal">
-       <form id="contact-form" class="reveal" novalidate="">
-        <div class="form-row reveal">
-         <label data-template-id="name-label" class="form-label canva-text" for="contact-name" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">Name</label><input data-template-id="name-input" class="form-input canva-input" id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" style="font-weight: 400; font-style: normal; font-size: 16px;">
-        </div>
-        <div class="form-row reveal">
-         <label data-template-id="email-label" class="form-label canva-text" for="contact-email-input" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">Email</label><input data-template-id="email-input" class="form-input canva-input" id="contact-email-input" name="email" type="email" autocomplete="email" placeholder="you@example.com" style="font-weight: 400; font-style: normal; font-size: 16px;">
-        </div>
-        <div class="form-row reveal">
-         <label data-template-id="message-label" class="form-label canva-text" for="contact-message" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px;">Message</label><textarea data-template-id="message-input" class="form-input canva-input" id="contact-message" name="message" style="font-weight: 400; font-style: normal; font-size: 16px;">Tell me a little about your project...</textarea>
-        </div>
-        <p id="form-error" class="form-error" aria-live="assertive"></p><button data-template-id="submit-button" class="action-button primary-action submit-button canva-button" type="submit" style="background: rgb(23, 126, 246); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Send Message</button>
-       </form>
-       <div id="success-state" class="success-state" hidden="" aria-live="polite">
-        <div class="success-icon">
-         <i data-lucide="check"></i>
-        </div>
-        <h3 data-template-id="success-title" class="success-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px;">Message received!</h3>
-        <p data-template-id="success-description" class="success-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px;">Thank you for reaching out. Your message has been saved and I will be in touch soon.</p>
-       </div>
-      </div>
-     </div>
-    </section>
-   </main>
-   <footer data-template-id="site-footer" class="site-footer canva-footer" style="background: rgb(7, 23, 47);">
-    <div class="portfolio-width">
-     <p data-template-id="footer-copy" class="footer-copy canva-text" style="color: rgb(185, 204, 222); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Apria Diva Putri. Built with intention.</p>
-    </div>
-   </footer>
-  </div>
-  <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      lucide.createIcons();
+    <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
 
-      const menuButton = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      menuButton.addEventListener("click", () => {
-        const isOpen = mobileMenu.classList.toggle("is-open");
-        menuButton.setAttribute("aria-expanded", String(isOpen));
-        menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-      });
-      document.querySelectorAll(".mobile-menu a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.remove("is-open");
-          menuButton.setAttribute("aria-expanded", "false");
-          menuButton.setAttribute("aria-label", "Open navigation menu");
+        const menuButton = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuButton.addEventListener("click", () => {
+          const isOpen = mobileMenu.classList.toggle("is-open");
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
         });
-      });
+        document.querySelectorAll(".mobile-menu a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("is-open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+          });
+        });
 
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.05, rootMargin: "0px 0px 60px 0px" },
+        );
+        document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+
+        const parallaxElements = [...document.querySelectorAll("[data-parallax]:not(.site-header)")];
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let parallaxFrame = 0;
+        const updateParallax = () => {
+          parallaxFrame = 0;
+          if (reduceMotion.matches) return;
+          const limit = window.innerWidth <= 900 ? 26 : 52;
+          parallaxElements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            const progress = (window.innerHeight / 2 - (rect.top + rect.height / 2)) / (window.innerHeight / 2 + rect.height / 2);
+            const offset = Math.max(-limit, Math.min(limit, progress * Number(element.dataset.parallax) * limit));
+            element.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
+          });
+        };
+        const scheduleParallax = () => {
+          if (!parallaxFrame) parallaxFrame = requestAnimationFrame(updateParallax);
+        };
+        window.addEventListener("scroll", scheduleParallax, { passive: true });
+        window.addEventListener("resize", scheduleParallax, { passive: true });
+        scheduleParallax();
+
+        document.querySelectorAll(".project-trigger").forEach((button) => {
+          button.addEventListener("click", () => {
+            document.getElementById("project-status").textContent = button.dataset.project + " is a placeholder. Replace this button with your live project URL in the editor.";
+          });
+        });
+        document.querySelectorAll(".certificate-trigger").forEach((button) => {
+          button.addEventListener("click", () => {
+            document.getElementById("certificate-status").textContent = "Certificate link placeholder selected. Replace it with your credential URL in the editor.";
+          });
+        });
+
+        const form = document.getElementById("contact-form");
+        const formError = document.getElementById("form-error");
+        const submitButton = form.querySelector("button[type='submit']");
+        const successState = document.getElementById("success-state");
+        let currentRecordCount = 0;
+        let dataReady = false;
+
+        const dataHandler = {
+          onDataChanged(data) {
+            currentRecordCount = data.length;
+          },
+        };
+
+        async function initializeSheet() {
+          const result = await window.dataSdk.init(dataHandler);
+          dataReady = result.isOk;
+          if (!result.isOk) formError.textContent = "The message service is unavailable right now. Please try again shortly.";
+        }
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          formError.textContent = "";
+          const name = document.getElementById("contact-name").value.trim();
+          const email = document.getElementById("contact-email-input").value.trim();
+          const message = document.getElementById("contact-message").value.trim();
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!name || !email || !message) {
+            formError.textContent = "Please complete your name, email, and message.";
+            return;
+          }
+          if (!emailPattern.test(email)) {
+            formError.textContent = "Please enter a valid email address.";
+            return;
+          }
+          if (!dataReady) {
+            formError.textContent = "The message service is still loading. Please try again in a moment.";
+            return;
+          }
+          if (currentRecordCount >= 999) {
+            formError.textContent = "Message limit reached. Please remove older entries from your Canva Sheet.";
+            return;
+          }
+
+          submitButton.disabled = true;
+          const result = await window.dataSdk.create({ name, email, message, submitted_at: new Date().toISOString() });
+          submitButton.disabled = false;
+
+          if (result.isOk) {
+            form.hidden = true;
+            successState.hidden = false;
+          } else {
+            formError.textContent = "Your message could not be saved. Please try again.";
           }
         });
-      }, { threshold: 0.05, rootMargin: "0px 0px 60px 0px" });
-      document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-      const parallaxElements = [...document.querySelectorAll("[data-parallax]:not(.site-header)")];
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-      let parallaxFrame = 0;
-      const updateParallax = () => {
-        parallaxFrame = 0;
-        if (reduceMotion.matches) return;
-        const limit = window.innerWidth <= 900 ? 26 : 52;
-        parallaxElements.forEach((element) => {
-          const rect = element.getBoundingClientRect();
-          const progress = (window.innerHeight / 2 - (rect.top + rect.height / 2)) / (window.innerHeight / 2 + rect.height / 2);
-          const offset = Math.max(-limit, Math.min(limit, progress * Number(element.dataset.parallax) * limit));
-          element.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
-        });
-      };
-      const scheduleParallax = () => { if (!parallaxFrame) parallaxFrame = requestAnimationFrame(updateParallax); };
-      window.addEventListener("scroll", scheduleParallax, { passive: true });
-      window.addEventListener("resize", scheduleParallax, { passive: true });
-      scheduleParallax();
-
-      document.querySelectorAll(".project-trigger").forEach((button) => {
-        button.addEventListener("click", () => {
-          document.getElementById("project-status").textContent = button.dataset.project + " is a placeholder. Replace this button with your live project URL in the editor.";
-        });
+        initializeSheet();
       });
-      document.querySelectorAll(".certificate-trigger").forEach((button) => {
-        button.addEventListener("click", () => {
-          document.getElementById("certificate-status").textContent = "Certificate link placeholder selected. Replace it with your credential URL in the editor.";
-        });
-      });
-
-      const form = document.getElementById("contact-form");
-      const formError = document.getElementById("form-error");
-      const submitButton = form.querySelector("button[type='submit']");
-      const successState = document.getElementById("success-state");
-      let currentRecordCount = 0;
-      let dataReady = false;
-
-      const dataHandler = {
-        onDataChanged(data) { currentRecordCount = data.length; }
-      };
-
-      async function initializeSheet() {
-        const result = await window.dataSdk.init(dataHandler);
-        dataReady = result.isOk;
-        if (!result.isOk) formError.textContent = "The message service is unavailable right now. Please try again shortly.";
-      }
-
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        formError.textContent = "";
-        const name = document.getElementById("contact-name").value.trim();
-        const email = document.getElementById("contact-email-input").value.trim();
-        const message = document.getElementById("contact-message").value.trim();
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!name || !email || !message) { formError.textContent = "Please complete your name, email, and message."; return; }
-        if (!emailPattern.test(email)) { formError.textContent = "Please enter a valid email address."; return; }
-        if (!dataReady) { formError.textContent = "The message service is still loading. Please try again in a moment."; return; }
-        if (currentRecordCount >= 999) { formError.textContent = "Message limit reached. Please remove older entries from your Canva Sheet."; return; }
-
-        submitButton.disabled = true;
-        const result = await window.dataSdk.create({ name, email, message, submitted_at: new Date().toISOString() });
-        submitButton.disabled = false;
-
-        if (result.isOk) {
-          form.hidden = true;
-          successState.hidden = false;
-        } else {
-          formError.textContent = "Your message could not be saved. Please try again.";
-        }
-      });
-
-      initializeSheet();
-    });
-  </script>
- 
-</body></html>
-
+    </script>
+  </body>
+</html>
