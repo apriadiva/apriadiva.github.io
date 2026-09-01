@@ -1,0 +1,135 @@
+/* ============================================================
+   SCROLL REVEAL EFFECT
+   Fade + Bottom Slide + Blur
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   VARIABLES
+   ------------------------------------------------------------ */
+
+:root {
+  --reveal-distance: 55px;
+  --reveal-blur: 12px;
+  --reveal-duration: 900ms;
+  --reveal-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ------------------------------------------------------------
+   DEFAULT STATE
+   ------------------------------------------------------------ */
+
+/*
+   Semua element dengan class "reveal" akan berada
+   dalam kondisi hidden terlebih dahulu.
+
+   Saat belum terlihat:
+   - transparan
+   - sedikit turun
+   - blur
+*/
+
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  filter: blur(var(--reveal-blur));
+
+  transition:
+    opacity var(--reveal-duration) var(--reveal-ease),
+    transform var(--reveal-duration) var(--reveal-ease),
+    filter var(--reveal-duration) var(--reveal-ease);
+
+  transition-delay: var(--reveal-delay, 0ms);
+
+  will-change: opacity, transform, filter;
+}
+
+/* ------------------------------------------------------------
+   VISIBLE STATE
+   ------------------------------------------------------------ */
+
+html.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+
+  transition-delay: var(--reveal-delay, 0ms);
+
+  will-change: auto;
+}
+
+/* ------------------------------------------------------------
+   DISTANCE FOR LARGE COMPONENTS
+   ------------------------------------------------------------ */
+
+html.js .project-card.reveal,
+html.js .cert-card.reveal,
+html.js .profile-panel.reveal,
+html.js .contact-form-wrap.reveal {
+  --reveal-distance: 42px;
+}
+
+/* ------------------------------------------------------------
+   PROJECT / CERTIFICATE HOVER
+   ------------------------------------------------------------ */
+
+html.js .project-card.reveal.is-visible:hover,
+html.js .cert-card.reveal.is-visible:hover {
+  transform: translateY(-6px);
+}
+
+/* ------------------------------------------------------------
+   STAGGER
+   ------------------------------------------------------------ */
+
+.reveal-delay-1 {
+  --reveal-delay: 80ms;
+}
+
+.reveal-delay-2 {
+  --reveal-delay: 160ms;
+}
+
+.reveal-delay-3 {
+  --reveal-delay: 240ms;
+}
+
+.reveal-delay-4 {
+  --reveal-delay: 320ms;
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 680px) {
+  :root {
+    --reveal-distance: 32px;
+    --reveal-blur: 8px;
+    --reveal-duration: 750ms;
+  }
+
+  html.js .project-card.reveal,
+  html.js .cert-card.reveal,
+  html.js .profile-panel.reveal,
+  html.js .contact-form-wrap.reveal {
+    --reveal-distance: 30px;
+  }
+}
+
+/* ------------------------------------------------------------
+   ACCESSIBILITY
+   ------------------------------------------------------------ */
+
+/*
+   Jangan mematikan animasi secara global di sini.
+
+   Kalau ingin disable animation, tambahkan class:
+   html.no-reveal-animation
+*/
+
+html.no-reveal-animation .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  transition: none !important;
+}

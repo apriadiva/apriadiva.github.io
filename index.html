@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <script>
-      window["__codeletBootstrap__"] = JSON.parse(
-        '{"A":"A","B":"20260831-01-4b600cf","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}',
-      );
+      document.documentElement.classList.add("js");
     </script>
-    <script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-    <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet" />
     <style>
+      /* =========================================================
+         01. DESIGN TOKENS & BASE
+         ========================================================= */
       :root {
         --navy: #091a33;
         --slate: #40536a;
@@ -38,6 +37,9 @@
         background: var(--paper);
         overflow-x: hidden;
       }
+      /* =========================================================
+         02. GLOBAL LAYOUT
+         ========================================================= */
       .site-shell {
         width: 100%;
         overflow: hidden;
@@ -60,6 +62,9 @@
         outline: 3px solid var(--electric-light);
         outline-offset: 3px;
       }
+      /* =========================================================
+         03. HEADER & NAVIGATION
+         ========================================================= */
       .site-header {
         position: fixed;
         top: 0;
@@ -71,6 +76,15 @@
         -webkit-backdrop-filter: blur(8px);
         background: rgba(247, 249, 252, 0.86);
         border-bottom: 1px solid rgba(111, 147, 184, 0.18);
+        transition:
+          box-shadow 250ms ease,
+          border-color 250ms ease,
+          background 250ms ease;
+      }
+
+      .site-header.is-scrolled {
+        border-bottom-color: rgba(111, 147, 184, 0.28);
+        box-shadow: 0 10px 30px rgba(9, 26, 51, 0.08);
       }
       .header-inner {
         min-height: 72px;
@@ -138,6 +152,9 @@
       .mobile-menu.is-open {
         display: flex;
       }
+      /* =========================================================
+         04. HERO SECTION
+         ========================================================= */
       .hero-section {
         position: relative;
         padding: 86px 0 100px;
@@ -348,6 +365,9 @@
         border-radius: 99px;
         background: #177ef6;
       }
+      /* =========================================================
+         05. SHARED SECTION STYLES
+         ========================================================= */
       .section-block {
         padding: 100px 0;
       }
@@ -379,6 +399,9 @@
         color: var(--slate);
         line-height: 1.75;
       }
+      /* =========================================================
+         06. ABOUT SECTION
+         ========================================================= */
       .about-section {
         background: linear-gradient(180deg, #f7f9fc, #eaf1f8);
       }
@@ -470,6 +493,9 @@
         line-height: 1.65;
         font-size: 0.94rem;
       }
+      /* =========================================================
+         07. PROJECTS SECTION
+         ========================================================= */
       .projects-section {
         background: #f7f9fc;
       }
@@ -508,32 +534,44 @@
         flex-direction: column;
         padding: 22px;
       }
+
       .card-title {
         margin: 0;
         color: var(--navy);
         font-size: 1.24rem;
         font-weight: 700;
+        line-height: 1.4;
+        height: 54px;
       }
+
       .card-copy {
         margin: 10px 0 17px;
         color: var(--slate);
         line-height: 1.65;
         font-size: 0.94rem;
+        height: 104px;
       }
+
       .stack-label {
-        margin: auto 0 8px;
+        margin: 0 0 8px;
         color: #66809a;
         font-size: 0.7rem;
+        line-height: 1.5;
         letter-spacing: 0.12em;
         font-weight: 700;
         text-transform: uppercase;
+        height: 42px;
       }
+
       .tech-stack {
         margin: 0 0 18px;
         color: #174e82;
         font-size: 0.85rem;
+        line-height: 1.45;
         font-weight: 700;
+        min-height: 40px;
       }
+
       .small-action {
         display: inline-flex;
         align-items: center;
@@ -549,15 +587,21 @@
         cursor: pointer;
         font-size: 0.86rem;
         font-weight: 700;
+        text-decoration: none;
+
+        margin-top: auto;
+
         transition:
           background 0.2s,
           color 0.2s;
       }
+
       .small-action:hover {
         background: #177ef6;
         color: #fff;
         border-color: #177ef6;
       }
+
       .inline-status {
         min-height: 24px;
         margin: 26px 0 0;
@@ -565,6 +609,9 @@
         font-size: 0.9rem;
         font-weight: 600;
       }
+      /* =========================================================
+         08. CERTIFICATIONS SECTION
+         ========================================================= */
       .certifications-section {
         background: linear-gradient(135deg, #102b4d, #0a1c36);
       }
@@ -579,7 +626,7 @@
       }
       .cert-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 18px;
       }
       .cert-card {
@@ -615,6 +662,9 @@
         font-size: 0.85rem;
         font-weight: 700;
       }
+      /* =========================================================
+         09. CONTACT SECTION
+         ========================================================= */
       .contact-section {
         background: #eaf1f8;
       }
@@ -653,6 +703,17 @@
       }
       .form-row {
         margin-bottom: 18px;
+      }
+      .form-honeypot {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        white-space: nowrap !important;
+        border: 0 !important;
       }
       .form-label {
         display: block;
@@ -725,6 +786,9 @@
         color: var(--slate);
         line-height: 1.65;
       }
+      /* =========================================================
+         10. FOOTER
+         ========================================================= */
       .site-footer {
         padding: 28px 0;
         background: #07172f;
@@ -735,17 +799,14 @@
         color: #b9ccde;
         font-size: 0.86rem;
       }
-      .reveal {
-        opacity: 0;
-        transform: translateY(15px);
-        transition:
-          opacity 450ms cubic-bezier(0.22, 1, 0.36, 1),
-          transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      .reveal.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      /* =========================================================
+         11. SCROLL REVEAL ANIMATIONS
+         The fade-bottom + blur effect lives in scroll-effects.css
+         ========================================================= */
+
+      /* =========================================================
+         12. RESPONSIVE BREAKPOINTS
+         ========================================================= */
       @media (max-width: 900px) {
         .hero-grid,
         .about-layout,
@@ -820,49 +881,21 @@
           background: rgba(255, 255, 255, 0.16);
           box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
         }
-        .reveal {
-          transform: translateY(11px);
-          transition-duration: 375ms;
-        }
         .project-card,
         .cert-card,
         .profile-panel {
           box-shadow: 0 6px 16px rgba(27, 55, 84, 0.05);
         }
       }
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-        *,
-        *:before,
-        *:after {
-          animation-duration: 0.01ms !important;
-          transition-duration: 0.01ms !important;
-        }
-        .reveal {
-          opacity: 1;
-          transform: none;
-        }
-        [data-parallax] {
-          transform: none !important;
-          will-change: auto;
-        }
-      }
-      [data-parallax] {
-        will-change: transform;
-        backface-visibility: hidden;
-      }
-      @media (max-width: 680px) {
-        [data-parallax] {
-          will-change: auto;
-        }
-      }
     </style>
-    <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
+    <!-- Scroll reveal: fade-bottom + blur -->
+    <link rel="stylesheet" href="scroll-effects.css" />
   </head>
   <body data-template-id="__page-root">
     <div class="site-shell">
+      <!-- ======================================================
+           HEADER / NAVIGATION
+           ====================================================== -->
       <header class="site-header canva-header" data-template-id="site-header" style="background: rgb(247, 249, 252)">
         <div class="portfolio-width header-inner">
           <a href="#home" class="brand-mark" aria-label="Back to home"
@@ -886,9 +919,12 @@
         </nav>
       </header>
       <main>
+        <!-- ====================================================
+             HERO
+             ==================================================== -->
         <section id="home" class="hero-section canva-section" data-template-id="hero-section" style="background: linear-gradient(135deg, rgb(23, 105, 170), rgb(113, 128, 150), rgb(255, 255, 255))">
           <div class="portfolio-width hero-grid">
-            <div>
+            <div class="hero-copy-layer">
               <p data-template-id="hero-eyebrow" class="eyebrow canva-text reveal" style="color: rgb(185, 219, 255); font-weight: 700; font-style: normal; font-size: 21px">Personal Portfolio</p>
               <h1 data-template-id="hero-heading" class="hero-heading display-face canva-text reveal" style="color: rgb(255, 255, 255); font-weight: 700; font-size: 41px">
                 <span data-template-id="hero-heading-intro" class="canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 41px">Hi, I'm</span
@@ -917,19 +953,16 @@
                 >
               </div>
             </div>
-            <div class="abstract-visual" aria-label="Abstract portfolio visual">
+            <div class="abstract-visual reveal" aria-label="Abstract portfolio visual" style="--reveal-delay: 220ms">
               <div class="profile-photo-frame">
-                <img
-                  data-template-id="hero-profile-photo"
-                  class="profile-photo canva-image"
-                  loading="eager"
-                  decoding="async"
-                  src="images\profile.png"
-                  alt="Professional portrait of a woman wearing a black hijab and suit against a blue background"
-                /><span data-template-id="profile-photo-hint" class="profile-photo-hint canva-text" style="color: rgb(255, 255, 255); font-weight: 600"></span>
+                <img data-template-id="hero-profile-photo" class="profile-photo canva-image" loading="eager" decoding="async" src="images/profile.png" alt="Apria Diva Putri" /><span
+                  data-template-id="profile-photo-hint"
+                  class="profile-photo-hint canva-text"
+                  style="color: rgb(255, 255, 255); font-weight: 600"
+                ></span>
               </div>
-              <div class="orb orb-one" data-parallax="0.28"></div>
-              <div class="orb orb-two" data-parallax="0.18"></div>
+              <div class="orb orb-one"></div>
+              <div class="orb orb-two"></div>
               <div class="glass-card glass-main">
                 <div class="glass-line blue"></div>
                 <div class="glass-line"></div>
@@ -940,6 +973,10 @@
             </div>
           </div>
         </section>
+
+        <!-- ====================================================
+             ABOUT
+             ==================================================== -->
         <section id="about" class="about-section section-block canva-section" data-template-id="about-section" style="background: rgb(234, 241, 248)">
           <div class="portfolio-width">
             <div class="section-top reveal">
@@ -965,12 +1002,12 @@
                   ><span data-template-id="skill-6" class="skill-tag canva-tag" style="background: rgb(220, 234, 253); color: rgb(23, 67, 111); font-weight: 700; font-style: normal; font-size: 16px">Data Visualizations</span>
                 </div>
               </article>
-              <div class="timeline reveal" aria-label="Professional timeline">
+              <div class="timeline" aria-label="Professional timeline">
                 <article class="timeline-item reveal">
                   <p data-template-id="milestone-1-year" class="timeline-year canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">2026</p>
                   <h3 data-template-id="milestone-1-title" class="timeline-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Fresh Graduate &amp; Best Graduate</h3>
                   <p data-template-id="milestone-1-description" class="timeline-copy canva-text" style="text-align: justify; color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    Graduated with a B.Sc. in Mathematics from Andalas University with a 3.97/4.00 GPA and was recognized as the Best Graduate of the Mathematics Study Program during the Fourth Graduation Period of 2026.
+                    Graduated with a B.Sc. in Mathematics from Andalas University (3.97/4.00 GPA). Honored as the Top Graduate of the Mathematics Program for the Class of 2026 (Third Graduation Session).
                   </p>
                 </article>
                 <article class="timeline-item reveal">
@@ -998,198 +1035,298 @@
             </div>
           </div>
         </section>
+        <!-- ====================================================
+             PROJECTS
+             ==================================================== -->
         <section id="projects" class="projects-section section-block canva-section" data-template-id="projects-section" style="background: rgb(247, 249, 252)">
           <div class="portfolio-width">
             <div class="section-top reveal">
               <p data-template-id="projects-kicker" class="section-kicker canva-text" style="color: rgb(23, 126, 246); font-weight: 700; font-style: normal; font-size: 16px">Selected Work</p>
-              <h2 data-template-id="projects-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px">Turning curiosity into analytical work</h2>
+              <h2 data-template-id="projects-heading" class="section-heading display-face canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 24px">Turning Data Into Insights</h2>
               <p data-template-id="projects-intro" class="section-intro canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
                 A selection of projects across data analytics, machine learning, finance, and accounting, reflecting my quantitative background and continuous learning
               </p>
             </div>
             <div class="card-grid">
               <article class="project-card canva-card reveal" data-template-id="project-card-1" style="background: rgb(255, 255, 255)">
-                <img data-template-id="project-image-1" class="project-image canva-image" loading="lazy" src="canva://MAHTxy_dgmk/1" alt="Close-up of a computer screen displaying ChatGPT interface in a dark setting." />
-                <div class="card-content reveal">
+                <img data-template-id="project-image-1" class="project-image canva-image" loading="lazy" src="images/project1.png" alt="Close-up of a computer screen displaying ChatGPT interface in a dark setting." />
+                <div class="card-content">
                   <h3 data-template-id="project-title-1" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">GRU Performance Evaluation for Indonesian Inflation</h3>
                   <p data-template-id="project-description-1" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    Evaluating how interest-rate and Rupiah exchange-rate variables influence GRU-based inflation modeling performance
+                    Evaluated GRU-based inflation forecasting performance by analyzing the influence of interest rates and Rupiah exchange rates on model predictions
                   </p>
                   <p data-template-id="tech-label-1" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">DEEP LEARNING · TIME SERIES · ECONOMIC FORECASTING</p>
-                  <p data-template-id="project-tech-1" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Python · TensorFlow · Scikit-learn</p>
-                  <a data-template-id="project-button-1" class="small-action canva-button" href="http://canva.link/wgm089hv9nbeyzu" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                  <p data-template-id="project-tech-1" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Python · TensorFlow · Scikit-learn · Pandas · NumPy</p>
+                  <a data-template-id="project-button-1" class="small-action canva-button" href="projects/Project 1.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
                     ><i data-lucide="arrow-up-right" aria-hidden="true"></i
                     ><span data-template-id="project-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span></a
                   >
                 </div>
               </article>
               <article class="project-card canva-card reveal" data-template-id="project-card-2" style="background: rgb(255, 255, 255)">
-                <img data-template-id="project-image-2" class="project-image canva-image" loading="lazy" src="canva://MAE1_FirT8E/1" alt="Modern smartphone mockup on marble surface with coffee. Ideal for app design presentations." />
-                <div class="card-content reveal">
-                  <h3 data-template-id="project-title-2" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Wellness Mobile App</h3>
+                <img data-template-id="project-image-2" class="project-image canva-image" loading="lazy" src="images/project2.png" alt="Modern smartphone mockup on marble surface with coffee. Ideal for app design presentations." />
+                <div class="card-content">
+                  <h3 data-template-id="project-title-2" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">E-Commerce Data Analysis</h3>
                   <p data-template-id="project-description-2" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    A placeholder mobile experience for helping people build calmer, more intentional daily routines.
+                    Analyzed e-commerce transaction data to identify sales trends, customer behavior, and category performance through exploratory analysis and data visualization
                   </p>
-                  <p data-template-id="tech-label-2" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
-                  <p data-template-id="project-tech-2" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">UX Research · Figma · Prototype</p>
-                  <button data-template-id="project-button-2" class="small-action project-trigger canva-button" data-project="Project 02" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
-                    ><span data-template-id="project-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
-                  </button>
+                  <p data-template-id="tech-label-2" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">DATA ANALYTICS · BUSINESS INTELLIGENCE · SALES ANALYSIS</p>
+                  <p data-template-id="project-tech-2" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">
+                    Python · Pandas · NumPy · Matplotlib · Seaborn · SQL · Data Studio
+                  </p>
+                  <a data-template-id="project-button-1" class="small-action canva-button" href="projects/Project 2.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                    ><i data-lucide="arrow-up-right" aria-hidden="true"></i
+                    ><span data-template-id="project-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span></a
+                  >
                 </div>
               </article>
               <article class="project-card canva-card reveal" data-template-id="project-card-3" style="background: rgb(255, 255, 255)">
-                <img
-                  data-template-id="project-image-3"
-                  class="project-image canva-image"
-                  loading="lazy"
-                  src="https://images.pexels.com/photos/5585800/pexels-photo-5585800.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
-                  alt="A woman sits comfortably indoors, browsing an online shopping website on her laptop."
-                />
-                <div class="card-content reveal">
-                  <h3 data-template-id="project-title-3" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">E-commerce Refresh</h3>
+                <img data-template-id="project-image-3" class="project-image canva-image" loading="lazy" src="images/project3.jpg" alt="A woman sits comfortably indoors, browsing an online shopping website on her laptop." />
+                <div class="card-content">
+                  <h3 data-template-id="project-title-3" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Cyclistic Bike-Share Analysis</h3>
                   <p data-template-id="project-description-3" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    A placeholder storefront redesign that improves discovery, confidence, and the path to purchase.
+                    Analyzed bike-sharing usage patterns to identify differences between annual members and casual riders and support targeted marketing strategies
                   </p>
-                  <p data-template-id="tech-label-3" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
-                  <p data-template-id="project-tech-3" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Shopify · UI Design · CRO</p>
-                  <button data-template-id="project-button-3" class="small-action project-trigger canva-button" data-project="Project 03" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
-                    ><span data-template-id="project-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
-                  </button>
+                  <p data-template-id="tech-label-3" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">DATA ANALYTICS · CUSTOMER BEHAVIOR · BUSINESS INSIGHTS</p>
+                  <p data-template-id="project-tech-3" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Python · Pandas · NumPy · Matplotlib · Seaborn</p>
+                  <a data-template-id="project-button-3" class="small-action canva-button" href="projects/Project%203.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    <span data-template-id="project-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Project </span>
+                  </a>
                 </div>
               </article>
               <article class="project-card canva-card reveal" data-template-id="project-card-4" style="background: rgb(255, 255, 255)">
-                <img
-                  data-template-id="project-image-4"
-                  class="project-image canva-image"
-                  loading="lazy"
-                  src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
-                  alt="Sleek laptop showcasing data analytics and graphs on the screen in a bright room."
-                />
-                <div class="card-content reveal">
-                  <h3 data-template-id="project-title-4" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Insights Platform</h3>
+                <img data-template-id="project-image-4" class="project-image canva-image" loading="lazy" src="images/project4.png" alt="Sleek laptop showcasing data analytics and graphs on the screen in a bright room." />
+                <div class="card-content">
+                  <h3 data-template-id="project-title-4" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Financial Statement Dashboard</h3>
                   <p data-template-id="project-description-4" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    A placeholder analytics product that translates performance signals into clear decisions.
+                    Developed an interactive dashboard to visualize financial performance, key financial metrics, and trends for clearer business insights
                   </p>
-                  <p data-template-id="tech-label-4" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
-                  <p data-template-id="project-tech-4" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Data Viz · Figma · Design System</p>
-                  <button data-template-id="project-button-4" class="small-action project-trigger canva-button" data-project="Project 04" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
-                    ><span data-template-id="project-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
-                  </button>
+                  <p data-template-id="tech-label-4" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">FINANCIAL ANALYTICS · BUSINESS INTELLIGENCE</p>
+                  <p data-template-id="project-tech-4" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Excel · Data Visualization</p>
+                  <a data-template-id="project-button-4" class="small-action canva-button" href="projects/Project%204.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    <span data-template-id="project-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Project </span>
+                  </a>
                 </div>
               </article>
               <article class="project-card canva-card reveal" data-template-id="project-card-5" style="background: rgb(255, 255, 255)">
-                <img
-                  data-template-id="project-image-5"
-                  class="project-image canva-image"
-                  loading="lazy"
-                  src="https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
-                  alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace."
-                />
-                <div class="card-content reveal">
-                  <h3 data-template-id="project-title-5" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Studio Portfolio Site</h3>
+                <img data-template-id="project-image-5" class="project-image canva-image" loading="lazy" src="images/project5.png" alt="A modern computer screen displaying web design work, showcasing creative visuals in a workspace." />
+                <div class="card-content">
+                  <h3 data-template-id="project-title-5" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Financial Forecasting Analysis</h3>
                   <p data-template-id="project-description-5" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    A placeholder portfolio website balancing visual personality, project storytelling, and clarity.
+                    Exploring financial time-series data to identify trends and develop forecasting models for future financial performance
                   </p>
-                  <p data-template-id="tech-label-5" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
-                  <p data-template-id="project-tech-5" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Webflow · Art Direction · CMS</p>
-                  <button data-template-id="project-button-5" class="small-action project-trigger canva-button" data-project="Project 05" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
-                    ><span data-template-id="project-button-5-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
-                  </button>
+                  <p data-template-id="tech-label-5" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">FINANCIAL ANALYTICS · TIME SERIES · FORECASTING</p>
+                  <p data-template-id="project-tech-5" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">In Progress</p>
+                  <a data-template-id="project-button-5" class="small-action canva-button" href="projects/Project%205.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    <span data-template-id="project-button-5-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Project </span>
+                  </a>
                 </div>
               </article>
               <article class="project-card canva-card reveal" data-template-id="project-card-6" style="background: rgb(255, 255, 255)">
-                <img
-                  data-template-id="project-image-6"
-                  class="project-image canva-image"
-                  loading="lazy"
-                  src="https://images.pexels.com/photos/7662060/pexels-photo-7662060.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800"
-                  alt="Close-up of smartphone showing a social media profile screen next to a laptop."
-                />
-                <div class="card-content reveal">
-                  <h3 data-template-id="project-title-6" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Community Platform</h3>
+                <img data-template-id="project-image-6" class="project-image canva-image" loading="lazy" src="images/project6.png" alt="Close-up of smartphone showing a social media profile screen next to a laptop." />
+                <div class="card-content">
+                  <h3 data-template-id="project-title-6" class="card-title canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Accounting Cycle for A Trading Company</h3>
                   <p data-template-id="project-description-6" class="card-copy canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">
-                    A placeholder social platform concept designed to create more meaningful digital connections.
+                    Applying the accounting cycle to a trading company, from transaction recording and journal entries to financial statement preparation
                   </p>
-                  <p data-template-id="tech-label-6" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">Tech Stack</p>
-                  <p data-template-id="project-tech-6" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">Product Strategy · UI · Testing</p>
-                  <button data-template-id="project-button-6" class="small-action project-trigger canva-button" data-project="Project 06" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i
-                    ><span data-template-id="project-button-6-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Project</span>
-                  </button>
+                  <p data-template-id="tech-label-6" class="stack-label canva-text" style="color: rgb(102, 128, 154); font-weight: 700; font-style: normal; font-size: 16px">ACCOUNTING · FINANCIAL REPORTING · BOOKKEEPING</p>
+                  <p data-template-id="project-tech-6" class="tech-stack canva-text" style="color: rgb(23, 78, 130); font-weight: 700; font-style: normal; font-size: 16px">In Progress</p>
+                  <a data-template-id="project-button-6" class="small-action canva-button" href="projects/Project%206.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    <span data-template-id="project-button-6-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Project </span>
+                  </a>
                 </div>
               </article>
             </div>
             <p id="project-status" class="inline-status" aria-live="polite"></p>
           </div>
         </section>
+        <!-- ====================================================
+     CERTIFICATIONS & ACHIEVEMENTS
+     ==================================================== -->
         <section id="certifications" class="certifications-section section-block canva-section" data-template-id="certifications-section" style="background: rgb(10, 28, 54)">
           <div class="portfolio-width">
+            <!-- ==================================================
+         SECTION HEADER
+         ================================================== -->
             <div class="section-top reveal">
-              <p data-template-id="certifications-kicker" class="section-kicker canva-text" style="color: rgb(126, 186, 255); font-weight: 700; font-style: normal; font-size: 16px">Credentials</p>
+              <p data-template-id="certifications-kicker" class="section-kicker canva-text" style="color: rgb(126, 186, 255); font-weight: 700; font-style: normal; font-size: 16px">Certifications &amp; Achievements</p>
+
               <h2 data-template-id="certifications-heading" class="section-heading display-face canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px">
-                Certifications &amp; continuous learning.
+                Credentials that strengthen my analytical foundation.
               </h2>
+
               <p data-template-id="certifications-intro" class="section-intro canva-text" style="color: rgb(189, 208, 226); font-weight: 400; font-style: normal; font-size: 16px">
-                Replace these placeholders with credentials, workshops, professional programs, and completed courses.
+                Professional certifications and academic achievements in data analytics, machine learning, programming, and quantitative skills.
               </p>
             </div>
+
+            <!-- ==================================================
+         CERTIFICATION GRID
+         ================================================== -->
             <div class="cert-grid">
+              <!-- =================================================
+           01. GOOGLE DATA ANALYTICS
+           ================================================= -->
               <article data-template-id="cert-card-1" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
-                <div class="cert-icon reveal">
-                  <i data-lucide="award"></i>
+                <div class="cert-icon">
+                  <i data-lucide="database" aria-hidden="true"></i>
                 </div>
-                <h3 data-template-id="cert-name-1" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Google UX Design Certificate</h3>
-                <p data-template-id="cert-issuer-1" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Google Career Certificates</p>
+
+                <h3 data-template-id="cert-name-1" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Google Data Analytics Professional Certificate</h3>
+
+                <p data-template-id="cert-issuer-1" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Google · Coursera</p>
+
                 <p data-template-id="cert-year-1" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2025</p>
-                <button data-template-id="cert-button-1" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                  <i data-lucide="external-link" aria-hidden="true"></i
-                  ><span data-template-id="cert-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
-                </button>
+
+                <a
+                  data-template-id="cert-button-1"
+                  class="small-action canva-button"
+                  href="https://coursera.org/share/0aacca74188cce8231b63fde5b840e9e"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                >
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-1-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Certificate </span>
+                </a>
               </article>
+
+              <!-- =================================================
+           02. MACHINE LEARNING WITH PYTHON
+           ================================================= -->
               <article data-template-id="cert-card-2" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
-                <div class="cert-icon reveal">
-                  <i data-lucide="award"></i>
+                <div class="cert-icon">
+                  <i data-lucide="brain-circuit" aria-hidden="true"></i>
                 </div>
-                <h3 data-template-id="cert-name-2" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Professional Scrum Master I</h3>
-                <p data-template-id="cert-issuer-2" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Scrum.org</p>
-                <p data-template-id="cert-year-2" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2024</p>
-                <button data-template-id="cert-button-2" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                  <i data-lucide="external-link" aria-hidden="true"></i
-                  ><span data-template-id="cert-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
-                </button>
+
+                <h3 data-template-id="cert-name-2" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Machine Learning with Python</h3>
+
+                <p data-template-id="cert-issuer-2" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">IBM · Coursera</p>
+
+                <p data-template-id="cert-year-2" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2025</p>
+
+                <a
+                  data-template-id="cert-button-2"
+                  class="small-action canva-button"
+                  href="https://coursera.org/share/ab3b18e2b209caee77f3bbc75e3afeae"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                >
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-2-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Certificate </span>
+                </a>
               </article>
+
+              <!-- =================================================
+           03. PYTHON FOR DATA SCIENCE, AI & DEVELOPMENT
+           ================================================= -->
               <article data-template-id="cert-card-3" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
-                <div class="cert-icon reveal">
-                  <i data-lucide="award"></i>
+                <div class="cert-icon">
+                  <i data-lucide="code-2" aria-hidden="true"></i>
                 </div>
-                <h3 data-template-id="cert-name-3" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Design Systems Fundamentals</h3>
-                <p data-template-id="cert-issuer-3" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Placeholder Learning Platform</p>
-                <p data-template-id="cert-year-3" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2023</p>
-                <button data-template-id="cert-button-3" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                  <i data-lucide="external-link" aria-hidden="true"></i
-                  ><span data-template-id="cert-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
-                </button>
+
+                <h3 data-template-id="cert-name-3" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Python for Data Science, AI &amp; Development</h3>
+
+                <p data-template-id="cert-issuer-3" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">IBM · Coursera</p>
+
+                <p data-template-id="cert-year-3" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2025</p>
+
+                <a
+                  data-template-id="cert-button-3"
+                  class="small-action canva-button"
+                  href="https://coursera.org/share/11c8b08c152bca0b57e0e5636ab9da29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                >
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-3-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Certificate </span>
+                </a>
               </article>
+
+              <!-- =================================================
+           04. MY SKILL BOOTCAMP
+           ================================================= -->
               <article data-template-id="cert-card-4" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
-                <div class="cert-icon reveal">
-                  <i data-lucide="award"></i>
+                <div class="cert-icon">
+                  <i data-lucide="bar-chart-3" aria-hidden="true"></i>
                 </div>
-                <h3 data-template-id="cert-name-4" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Accessibility for Digital Products</h3>
-                <p data-template-id="cert-issuer-4" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Placeholder Learning Platform</p>
-                <p data-template-id="cert-year-4" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2022</p>
-                <button data-template-id="cert-button-4" class="small-action certificate-trigger canva-button" type="button" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
-                  <i data-lucide="external-link" aria-hidden="true"></i
-                  ><span data-template-id="cert-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px">View Certificate</span>
-                </button>
+
+                <h3 data-template-id="cert-name-4" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Data Analysis: Fullstack Intensive Bootcamp</h3>
+
+                <p data-template-id="cert-issuer-4" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">MySkill · Batch 11</p>
+
+                <p data-template-id="cert-year-4" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2023</p>
+
+                <a
+                  data-template-id="cert-button-4"
+                  class="small-action canva-button"
+                  href="certificates/DATA ANALYSIS FULLSTACK INTENSIVE BOOTCAMP.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)"
+                >
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-4-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Certificate </span>
+                </a>
+              </article>
+
+              <!-- =================================================
+           05. TOEFL ITP
+           ================================================= -->
+              <article data-template-id="cert-card-5" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon">
+                  <i data-lucide="languages" aria-hidden="true"></i>
+                </div>
+
+                <h3 data-template-id="cert-name-5" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">TOEFL ITP</h3>
+
+                <p data-template-id="cert-issuer-5" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Colorado Course Bengkulu</p>
+
+                <p data-template-id="cert-year-5" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">Total Score: 503</p>
+
+                <a data-template-id="cert-button-5" class="small-action canva-button" href="certificates/TOEFL ITP.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-5-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Certificate </span>
+                </a>
+              </article>
+
+              <!-- =================================================
+           06. BEST GRADUATE
+           ================================================= -->
+              <article data-template-id="cert-card-6" class="cert-card canva-card reveal" style="background: rgb(255, 255, 255)">
+                <div class="cert-icon">
+                  <i data-lucide="trophy" aria-hidden="true"></i>
+                </div>
+
+                <h3 data-template-id="cert-name-6" class="cert-name canva-text" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 19px">Best Graduate — Mathematics Study Program</h3>
+
+                <p data-template-id="cert-issuer-6" class="cert-issuer canva-text" style="color: rgb(64, 83, 106); font-weight: 400; font-style: normal; font-size: 16px">Faculty of Mathematics and Natural Sciences</p>
+
+                <p data-template-id="cert-year-6" class="cert-year canva-text" style="color: rgb(57, 117, 170); font-weight: 700; font-style: normal; font-size: 16px">2026</p>
+
+                <a data-template-id="cert-button-6" class="small-action canva-button" href="certificates/Best Graduate.pdf" target="_blank" rel="noopener noreferrer" style="background: rgb(255, 255, 255); color: rgb(21, 85, 143)">
+                  <i data-lucide="external-link" aria-hidden="true"></i>
+
+                  <span data-template-id="cert-button-6-label" class="canva-text" style="color: rgb(21, 85, 143); font-weight: 700; font-style: normal; font-size: 16px"> View Achievement </span>
+                </a>
               </article>
             </div>
-            <p id="certificate-status" class="inline-status" style="color: #b9dbff" aria-live="polite"></p>
           </div>
         </section>
+        <!-- ====================================================
+             CONTACT
+             ==================================================== -->
         <section id="contact" class="contact-section section-block canva-section" data-template-id="contact-section" style="background: rgb(234, 241, 248)">
           <div class="portfolio-width contact-layout">
             <div class="contact-details reveal">
@@ -1227,12 +1364,23 @@
               >
             </div>
             <div class="contact-form-wrap canva-panel reveal">
-              <form id="contact-form" class="reveal" novalidate="">
-                <div class="form-row reveal">
+              <form id="contact-form" novalidate="" autocomplete="on">
+                <div class="form-row">
                   <label data-template-id="name-label" class="form-label canva-text" for="contact-name" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Name</label
-                  ><input data-template-id="name-input" class="form-input canva-input" id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" style="font-weight: 400; font-style: normal; font-size: 16px" />
+                  ><input
+                    data-template-id="name-input"
+                    class="form-input canva-input"
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    maxlength="100"
+                    required
+                    style="font-weight: 400; font-style: normal; font-size: 16px"
+                  />
                 </div>
-                <div class="form-row reveal">
+                <div class="form-row">
                   <label data-template-id="email-label" class="form-label canva-text" for="contact-email-input" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Email</label
                   ><input
                     data-template-id="email-input"
@@ -1242,12 +1390,27 @@
                     type="email"
                     autocomplete="email"
                     placeholder="you@example.com"
+                    maxlength="200"
+                    required
                     style="font-weight: 400; font-style: normal; font-size: 16px"
                   />
                 </div>
-                <div class="form-row reveal">
+                <div class="form-row">
                   <label data-template-id="message-label" class="form-label canva-text" for="contact-message" style="color: rgb(9, 26, 51); font-weight: 700; font-style: normal; font-size: 16px">Message</label
-                  ><textarea data-template-id="message-input" class="form-input canva-input" id="contact-message" name="message" style="font-weight: 400; font-style: normal; font-size: 16px">Tell me a little about your project...</textarea>
+                  ><textarea
+                    data-template-id="message-input"
+                    class="form-input canva-input"
+                    id="contact-message"
+                    name="message"
+                    placeholder="Tell me a little about your project..."
+                    maxlength="5000"
+                    required
+                    style="font-weight: 400; font-style: normal; font-size: 16px"
+                  ></textarea>
+                </div>
+                <div class="form-honeypot" aria-hidden="true">
+                  <label for="contact-website">Website</label>
+                  <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off" />
                 </div>
                 <p id="form-error" class="form-error" aria-live="assertive"></p>
                 <button
@@ -1272,17 +1435,25 @@
           </div>
         </section>
       </main>
+      <!-- ======================================================
+           FOOTER
+           ====================================================== -->
       <footer data-template-id="site-footer" class="site-footer canva-footer" style="background: rgb(7, 23, 47)">
         <div class="portfolio-width">
           <p data-template-id="footer-copy" class="footer-copy canva-text" style="color: rgb(185, 204, 222); font-weight: 400; font-style: normal; font-size: 16px">© 2026 Apria Diva Putri. Built with intention.</p>
         </div>
       </footer>
     </div>
-    <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        lucide.createIcons();
+        // ---------------------------------------------------------
+        // Icons
+        // ---------------------------------------------------------
+        window.lucide?.createIcons();
 
+        // ---------------------------------------------------------
+        // Mobile navigation
+        // ---------------------------------------------------------
         const menuButton = document.getElementById("menu-toggle");
         const mobileMenu = document.getElementById("mobile-menu");
         menuButton.addEventListener("click", () => {
@@ -1297,41 +1468,20 @@
             menuButton.setAttribute("aria-label", "Open navigation menu");
           });
         });
-
-        const revealObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-                revealObserver.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.05, rootMargin: "0px 0px 60px 0px" },
-        );
-        document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
-
-        const parallaxElements = [...document.querySelectorAll("[data-parallax]:not(.site-header)")];
-        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-        let parallaxFrame = 0;
-        const updateParallax = () => {
-          parallaxFrame = 0;
-          if (reduceMotion.matches) return;
-          const limit = window.innerWidth <= 900 ? 26 : 52;
-          parallaxElements.forEach((element) => {
-            const rect = element.getBoundingClientRect();
-            const progress = (window.innerHeight / 2 - (rect.top + rect.height / 2)) / (window.innerHeight / 2 + rect.height / 2);
-            const offset = Math.max(-limit, Math.min(limit, progress * Number(element.dataset.parallax) * limit));
-            element.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
-          });
+        // ---------------------------------------------------------
+        // Header scroll state
+        // ---------------------------------------------------------
+        const siteHeader = document.querySelector(".site-header");
+        const updateHeaderState = () => {
+          siteHeader.classList.toggle("is-scrolled", window.scrollY > 18);
         };
-        const scheduleParallax = () => {
-          if (!parallaxFrame) parallaxFrame = requestAnimationFrame(updateParallax);
-        };
-        window.addEventListener("scroll", scheduleParallax, { passive: true });
-        window.addEventListener("resize", scheduleParallax, { passive: true });
-        scheduleParallax();
 
+        window.addEventListener("scroll", updateHeaderState, { passive: true });
+        updateHeaderState();
+
+        // ---------------------------------------------------------
+        // Placeholder project & certificate actions
+        // ---------------------------------------------------------
         document.querySelectorAll(".project-trigger").forEach((button) => {
           button.addEventListener("click", () => {
             document.getElementById("project-status").textContent = button.dataset.project + " is a placeholder. Replace this button with your live project URL in the editor.";
@@ -1343,64 +1493,99 @@
           });
         });
 
+        // ---------------------------------------------------------
+        // Contact form + Google Sheets integration
+        // ---------------------------------------------------------
         const form = document.getElementById("contact-form");
         const formError = document.getElementById("form-error");
         const submitButton = form.querySelector("button[type='submit']");
         const successState = document.getElementById("success-state");
-        let currentRecordCount = 0;
-        let dataReady = false;
+        const defaultSubmitLabel = submitButton.textContent.trim();
 
-        const dataHandler = {
-          onDataChanged(data) {
-            currentRecordCount = data.length;
-          },
+        // Replace this value with the Web App URL produced by Google Apps Script.
+        // Example: https://script.google.com/macros/s/AKfycb.../exec
+        const GOOGLE_SHEETS_ENDPOINT = "PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+        const googleSheetsIsConfigured = () => /^https:\/\//i.test(GOOGLE_SHEETS_ENDPOINT) && !GOOGLE_SHEETS_ENDPOINT.includes("PASTE_GOOGLE_APPS_SCRIPT");
+
+        const showFormSuccess = () => {
+          form.reset();
+          form.hidden = true;
+          successState.hidden = false;
+          window.lucide?.createIcons();
         };
-
-        async function initializeSheet() {
-          const result = await window.dataSdk.init(dataHandler);
-          dataReady = result.isOk;
-          if (!result.isOk) formError.textContent = "The message service is unavailable right now. Please try again shortly.";
-        }
 
         form.addEventListener("submit", async (event) => {
           event.preventDefault();
           formError.textContent = "";
+
           const name = document.getElementById("contact-name").value.trim();
           const email = document.getElementById("contact-email-input").value.trim();
           const message = document.getElementById("contact-message").value.trim();
+          const website = document.getElementById("contact-website").value.trim();
           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
           if (!name || !email || !message) {
             formError.textContent = "Please complete your name, email, and message.";
             return;
           }
+
           if (!emailPattern.test(email)) {
             formError.textContent = "Please enter a valid email address.";
             return;
           }
-          if (!dataReady) {
-            formError.textContent = "The message service is still loading. Please try again in a moment.";
+
+          if (!googleSheetsIsConfigured()) {
+            formError.textContent = "Contact form is not connected to Google Sheets yet. Add your Apps Script Web App URL in GOOGLE_SHEETS_ENDPOINT.";
             return;
           }
-          if (currentRecordCount >= 999) {
-            formError.textContent = "Message limit reached. Please remove older entries from your Canva Sheet.";
+
+          // Honeypot: normal visitors never fill this field.
+          // If a bot fills it, silently behave like a successful submission.
+          if (website) {
+            showFormSuccess();
             return;
           }
+
+          const payload = new URLSearchParams({
+            name,
+            email,
+            message,
+            website: "",
+            submitted_at: new Date().toISOString(),
+            source: window.location.href,
+          });
+
+          const controller = new AbortController();
+          const timeoutId = window.setTimeout(() => controller.abort(), 15000);
 
           submitButton.disabled = true;
-          const result = await window.dataSdk.create({ name, email, message, submitted_at: new Date().toISOString() });
-          submitButton.disabled = false;
+          submitButton.textContent = "Sending...";
 
-          if (result.isOk) {
-            form.hidden = true;
-            successState.hidden = false;
-          } else {
-            formError.textContent = "Your message could not be saved. Please try again.";
+          try {
+            // Apps Script Web Apps are cross-origin. `no-cors` keeps a static
+            // portfolio compatible with the endpoint while still delivering
+            // the POST request to Google Sheets.
+            await fetch(GOOGLE_SHEETS_ENDPOINT, {
+              method: "POST",
+              mode: "no-cors",
+              cache: "no-store",
+              body: payload,
+              signal: controller.signal,
+            });
+
+            showFormSuccess();
+          } catch (error) {
+            console.error("Google Sheets submission failed:", error);
+            formError.textContent = error?.name === "AbortError" ? "The request took too long. Please check your connection and try again." : "Your message could not be sent. Please try again.";
+          } finally {
+            window.clearTimeout(timeoutId);
+            submitButton.disabled = false;
+            submitButton.textContent = defaultSubmitLabel;
           }
         });
-
-        initializeSheet();
       });
     </script>
+    <script src="scroll-effects.js"></script>
   </body>
 </html>
